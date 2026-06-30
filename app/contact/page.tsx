@@ -44,8 +44,8 @@ export default function ContactPage() {
         <div className="mb-10">
           <h1 className="text-4xl font-bold mb-3">Get in touch</h1>
           <p className="text-muted-foreground max-w-xl">
-            We respond within 1 business day. No sales scripts — just a
-            straightforward conversation about your books.
+            The Books & Beyond team responds within 1 business day. No sales
+            scripts — just a straightforward conversation about your books.
           </p>
         </div>
 

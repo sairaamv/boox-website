@@ -34,9 +34,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground mt-3">
-              Virtual Accounting & Auditing.
-              <br />
-              Humans + AI.
+              Books & Beyond — Virtual Accounting & Auditing.
             </p>
           </div>
 

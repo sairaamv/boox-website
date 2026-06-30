@@ -130,7 +130,7 @@ export default function AUPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Let&apos;s sort your Australian books.</h2>
           <p className="text-white/80 mb-8">
-            ATO-registered, BAS-ready, and no-nonsense about your numbers.
+            Books & Beyond — ATO-registered, BAS-ready, and no-nonsense about your numbers.
           </p>
           <a
             href="/contact"

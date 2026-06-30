@@ -191,8 +191,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to clean up your books?</h2>
           <p className="text-white/80 mb-8 max-w-md mx-auto">
-            Talk to an accountant today. No sales pitch — just a conversation about
-            what you need.
+            Talk to a Books & Beyond accountant today. No sales pitch — just a
+            conversation about what you need.
           </p>
           <Link
             href="/contact"

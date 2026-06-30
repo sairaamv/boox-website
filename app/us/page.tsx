@@ -128,7 +128,7 @@ export default function USPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Let&apos;s sort your US books.</h2>
           <p className="text-white/80 mb-8">
-            IRS-compliant, thorough, and built for your business size.
+            Books & Beyond — IRS-compliant, thorough, and built for your business size.
           </p>
           <a
             href="/contact"

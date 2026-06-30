@@ -130,7 +130,7 @@ export default function CAPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Let&apos;s sort your Canadian books.</h2>
           <p className="text-white/80 mb-8">
-            CRA-compliant, thorough, and built around your business.
+            Books & Beyond — CRA-compliant, thorough, and built around your business.
           </p>
           <a
             href="/contact"

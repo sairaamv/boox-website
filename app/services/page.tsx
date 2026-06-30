@@ -75,8 +75,8 @@ export default function ServicesPage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Our Services</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          End-to-end accounting, tax, and advisory — powered by expert humans
-          and AI workflows.
+          Books & Beyond offers end-to-end accounting, tax, and advisory —
+          powered by expert humans and AI workflows.
         </p>
       </section>
 
@@ -111,7 +111,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Not sure what you need?</h2>
           <p className="text-white/80 mb-8">
-            Book a call and we&apos;ll figure it out together.
+            Book a call with the Books & Beyond team and we&apos;ll figure it out together.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
