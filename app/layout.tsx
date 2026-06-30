@@ -4,11 +4,6 @@ import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -16,20 +11,20 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "BooX — Virtual Accounting. Humans + AI.",
+  title: "Books & Beyond — Virtual Accounting & Auditing",
   description:
     "Expert accountants backed by AI-powered workflows. Faster closes, cleaner books, audit-ready output. Serving businesses in the US, Canada, and Australia.",
-  metadataBase: new URL("https://boox.io"),
+  metadataBase: new URL("https://booksnb.com"),
   alternates: { canonical: "/" },
   openGraph: {
-    title: "BooX — Virtual Accounting. Humans + AI.",
+    title: "Books & Beyond — Virtual Accounting & Auditing",
     description:
       "Expert accountants backed by AI-powered workflows for US, Canadian, and Australian businesses.",
-    url: "https://boox.io",
-    siteName: "BooX",
+    url: "https://booksnb.com",
+    siteName: "Books & Beyond",
     type: "website",
   },
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/booksnb-icon.svg" },
 };
 
 export default function RootLayout({
@@ -38,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={geistMono.variable}>
       <body className="antialiased font-sans bg-background text-foreground min-h-screen flex flex-col">
         <Nav />
         <main className="flex-1">{children}</main>

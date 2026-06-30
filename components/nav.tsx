@@ -17,15 +17,45 @@ const countryLinks = [
   { href: "/au", label: "AU" },
 ];
 
+function BooksnbLogo() {
+  return (
+    <Link href="/" className="flex items-center gap-3 no-underline">
+      <span
+        className="flex items-center justify-center w-10 h-10 rounded-xl shrink-0"
+        style={{ background: "var(--brand-gradient)" }}
+      >
+        <svg
+          viewBox="0 0 110 96"
+          className="w-[56%] h-[56%] text-white"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="7.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M55 30 C44 22 26 22 14 28 L14 72 C26 66 44 66 55 72" />
+          <path d="M55 30 C66 22 84 22 96 28 L96 72 C84 66 66 66 55 72" />
+          <path d="M55 30 L55 72" />
+        </svg>
+      </span>
+      <span
+        className="font-bold text-xl text-foreground"
+        style={{ letterSpacing: "-0.04em" }}
+      >
+        books<span className="text-brand-forest">nb</span>
+      </span>
+    </Link>
+  );
+}
+
 export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="font-bold text-2xl text-brand-forest tracking-tight">
-          BooX
-        </Link>
+        <BooksnbLogo />
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
@@ -57,7 +87,8 @@ export default function Nav() {
           </div>
           <Link
             href="/contact"
-            className="text-sm bg-brand-forest text-white px-4 py-2 rounded-lg hover:bg-brand-forest-light transition-colors"
+            className="text-sm text-white px-4 py-2 rounded-lg transition-colors"
+            style={{ background: "var(--brand-gradient)" }}
           >
             Book a Call
           </Link>
@@ -103,7 +134,8 @@ export default function Nav() {
             </div>
             <Link
               href="/contact"
-              className="text-sm bg-brand-forest text-white px-4 py-2 rounded-lg text-center hover:bg-brand-forest-light transition-colors mt-1"
+              className="text-sm text-white px-4 py-2 rounded-lg text-center mt-1"
+              style={{ background: "var(--brand-gradient)" }}
               onClick={() => setOpen(false)}
             >
               Book a Call

@@ -29,7 +29,7 @@ export default function PrivacyPage() {
           {
             title: "Contact",
             content:
-              "If you have questions about this policy, contact us at hello@boox.io. {PRIVACY_CONTENT}",
+              "If you have questions about this policy, contact us at hello@booksnb.com. {PRIVACY_CONTENT}",
           },
         ].map((s) => (
           <div key={s.title}>

@@ -29,7 +29,7 @@ const auServices = [
   },
 ];
 
-const whyBooX = [
+const whyBooksAndBeyond = [
   {
     title: "ATO-registered advisors",
     desc: "Our accountants are registered with the ATO and understand the full compliance landscape.",
@@ -87,11 +87,11 @@ export default function AUPage() {
         </div>
       </section>
 
-      {/* Why BooX */}
+      {/* Why Books & Beyond */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
-        <h2 className="text-2xl font-bold mb-10">Why BooX for Australian businesses</h2>
+        <h2 className="text-2xl font-bold mb-10">Why Books & Beyond for Australian businesses</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {whyBooX.map((vp) => (
+          {whyBooksAndBeyond.map((vp) => (
             <div key={vp.title} className="bg-card border border-border rounded-lg p-6 shadow-sm">
               <h3 className="font-semibold mb-2">{vp.title}</h3>
               <p className="text-sm text-muted-foreground">{vp.desc}</p>

@@ -72,9 +72,9 @@ export default function USPage() {
         </div>
       </section>
 
-      {/* Why BooX */}
+      {/* Why Books & Beyond */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
-        <h2 className="text-2xl font-bold mb-10">Why BooX for US businesses</h2>
+        <h2 className="text-2xl font-bold mb-10">Why Books & Beyond for US businesses</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {[
             {

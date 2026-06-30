@@ -57,10 +57,10 @@ export default function ContactPage() {
                 Email
               </p>
               <a
-                href="mailto:hello@boox.io"
+                href="mailto:hello@booksnb.com"
                 className="text-brand-forest hover:underline font-medium"
               >
-                hello@boox.io
+                hello@booksnb.com
               </a>
             </div>
 
@@ -197,7 +197,7 @@ export default function ContactPage() {
 
                 {status === "error" && (
                   <p className="text-sm text-destructive">
-                    Something went wrong. Please email us directly at hello@boox.io.
+                    Something went wrong. Please email us directly at hello@booksnb.com.
                   </p>
                 )}
 

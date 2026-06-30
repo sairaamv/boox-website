@@ -9,12 +9,12 @@ export default function TermsPage() {
           {
             title: "Acceptance of Terms",
             content:
-              "By using BooX services, you agree to these terms. {TERMS_CONTENT}",
+              "By using Books & Beyond services, you agree to these terms. {TERMS_CONTENT}",
           },
           {
             title: "Services",
             content:
-              "BooX provides virtual accounting, tax, and advisory services. The scope of services is defined in your service agreement. {TERMS_CONTENT}",
+              "Books & Beyond provides virtual accounting, tax, and advisory services. The scope of services is defined in your service agreement. {TERMS_CONTENT}",
           },
           {
             title: "Client Responsibilities",
@@ -34,7 +34,7 @@ export default function TermsPage() {
           {
             title: "Contact",
             content:
-              "For questions about these terms, contact us at hello@boox.io. {TERMS_CONTENT}",
+              "For questions about these terms, contact us at hello@booksnb.com. {TERMS_CONTENT}",
           },
         ].map((s) => (
           <div key={s.title}>

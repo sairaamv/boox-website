@@ -40,7 +40,7 @@ export default function AboutPage() {
           Built by accountants. Powered by AI.
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          BooX started with a simple belief: small businesses deserve the same
+          Books & Beyond started with a simple belief: small businesses deserve the same
           quality of accounting that large enterprises have access to — without
           the enterprise price tag.
         </p>
@@ -52,7 +52,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold mb-6">Our story</h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              BooX started with a simple belief: small businesses deserve the same
+              Books & Beyond started with a simple belief: small businesses deserve the same
               quality of accounting that large enterprises have access to — without
               the enterprise price tag.
             </p>

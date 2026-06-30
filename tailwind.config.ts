@@ -13,6 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         "brand-forest": "var(--brand-forest)",
         "brand-forest-light": "var(--brand-forest-light)",
+        "brand-forest-deep": "var(--brand-forest-deep)",
         muted: {
           DEFAULT: "var(--muted)",
           foreground: "var(--muted-foreground)",
@@ -23,8 +24,11 @@ const config: Config = {
         ring: "var(--ring)",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "sans-serif"],
+        sans: ["var(--font-sora)", "system-ui", "sans-serif"],
         mono: ["var(--font-geist-mono)", "monospace"],
+      },
+      backgroundImage: {
+        "brand-gradient": "var(--brand-gradient)",
       },
     },
   },
