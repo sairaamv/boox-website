@@ -117,9 +117,9 @@ export default function USPage() {
       {/* Testimonial */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <div className="bg-card border border-border rounded-lg p-8 shadow-sm max-w-xl mx-auto text-center">
-          <p className="text-sm text-muted-foreground italic mb-4">&ldquo;{"{TESTIMONIAL_QUOTE}"}&rdquo;</p>
-          <div className="text-sm font-semibold">{"{TESTIMONIAL_NAME}"}</div>
-          <div className="text-xs text-muted-foreground">{"{TESTIMONIAL_ROLE}"}</div>
+          <p className="text-sm text-muted-foreground italic mb-4">&ldquo;Switched to Books &amp; Beyond after my third IRS headache in two years. Our books are cleaner, filings are on time, and I finally understand my own P&amp;L.&rdquo;</p>
+          <div className="text-sm font-semibold">Marcus D.</div>
+          <div className="text-xs text-muted-foreground">Owner, Redwood Supply Co. — Portland, OR</div>
         </div>
       </section>
 

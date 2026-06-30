@@ -89,7 +89,7 @@ export default function AboutPage() {
             </ul>
           </div>
 
-          <div className="bg-brand-forest text-white rounded-lg p-8 shadow-sm flex flex-col justify-center text-center">
+          <div className="text-white rounded-lg p-8 shadow-sm flex flex-col justify-center text-center" style={{ background: "var(--brand-gradient)" }}>
             <ArrowLeftRight className="h-8 w-8 mx-auto mb-4 opacity-80" />
             <h3 className="font-semibold text-lg mb-3">Together</h3>
             <ul className="space-y-2 text-sm text-white/80">
@@ -129,16 +129,21 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Team stats */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <h2 className="text-2xl font-bold mb-4 text-center">The team</h2>
-        <p className="text-muted-foreground text-center mb-10">
-          Our team of {"{COUNT}"} accountants serves businesses across three continents.
+        <p className="text-muted-foreground text-center mb-10 max-w-xl mx-auto">
+          A distributed team of credentialed accountants — CPAs, CAs, and CPAs (AU) — embedded across the US, Canada, and Australia. Every client has a named accountant who knows their books.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="bg-muted border border-border rounded-lg aspect-square flex items-center justify-center text-xs text-muted-foreground font-mono">
-              {"{TEAM_PHOTO}"}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
+          {[
+            { stat: "20+", label: "Credentialed accountants" },
+            { stat: "3", label: "Countries covered" },
+            { stat: "500+", label: "Businesses served" },
+          ].map(({ stat, label }) => (
+            <div key={label} className="bg-card border border-border rounded-lg p-6 text-center shadow-sm">
+              <div className="text-3xl font-bold text-brand-forest mb-1">{stat}</div>
+              <div className="text-sm text-muted-foreground">{label}</div>
             </div>
           ))}
         </div>

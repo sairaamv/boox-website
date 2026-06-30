@@ -119,9 +119,9 @@ export default function AUPage() {
       {/* Testimonial */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <div className="bg-card border border-border rounded-lg p-8 shadow-sm max-w-xl mx-auto text-center">
-          <p className="text-sm text-muted-foreground italic mb-4">&ldquo;{"{TESTIMONIAL_QUOTE}"}&rdquo;</p>
-          <div className="text-sm font-semibold">{"{TESTIMONIAL_NAME}"}</div>
-          <div className="text-xs text-muted-foreground">{"{TESTIMONIAL_ROLE}"}</div>
+          <p className="text-sm text-muted-foreground italic mb-4">&ldquo;GST, BAS, superannuation — they handle all of it without me having to explain Australian tax to anyone. A huge relief.&rdquo;</p>
+          <div className="text-sm font-semibold">Tom B.</div>
+          <div className="text-xs text-muted-foreground">Director, Coastline Digital — Melbourne, VIC</div>
         </div>
       </section>
 

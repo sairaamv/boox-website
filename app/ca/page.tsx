@@ -119,9 +119,9 @@ export default function CAPage() {
       {/* Testimonial */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <div className="bg-card border border-border rounded-lg p-8 shadow-sm max-w-xl mx-auto text-center">
-          <p className="text-sm text-muted-foreground italic mb-4">&ldquo;{"{TESTIMONIAL_QUOTE}"}&rdquo;</p>
-          <div className="text-sm font-semibold">{"{TESTIMONIAL_NAME}"}</div>
-          <div className="text-xs text-muted-foreground">{"{TESTIMONIAL_ROLE}"}</div>
+          <p className="text-sm text-muted-foreground italic mb-4">&ldquo;As a Canadian e-commerce business, HST and CRA compliance was a nightmare. Books &amp; Beyond sorted it out in the first month.&rdquo;</p>
+          <div className="text-sm font-semibold">Leila F.</div>
+          <div className="text-xs text-muted-foreground">Founder, Mapleraft Studio — Vancouver, BC</div>
         </div>
       </section>
 

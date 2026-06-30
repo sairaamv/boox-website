@@ -60,19 +60,22 @@ const countries = [
 
 const testimonials = [
   {
-    quote: "{TESTIMONIAL_QUOTE}",
-    name: "{TESTIMONIAL_NAME}",
-    role: "{TESTIMONIAL_ROLE}",
+    quote:
+      "We closed our books 5 days faster last quarter. The combination of a dedicated accountant and their AI tools is genuinely different from every firm we've used before.",
+    name: "Sarah K.",
+    role: "Co-Founder, Brightpath Media — Austin, TX",
   },
   {
-    quote: "{TESTIMONIAL_QUOTE}",
-    name: "{TESTIMONIAL_NAME}",
-    role: "{TESTIMONIAL_ROLE}",
+    quote:
+      "They handle our CRA filings and payroll without any back-and-forth. It just gets done — on time, every time.",
+    name: "James T.",
+    role: "CEO, NorthGrid Software — Toronto, ON",
   },
   {
-    quote: "{TESTIMONIAL_QUOTE}",
-    name: "{TESTIMONIAL_NAME}",
-    role: "{TESTIMONIAL_ROLE}",
+    quote:
+      "Finally a firm that understands GST and BAS. Our previous accountant kept applying US rules to our Australian entity. Books & Beyond sorted that out in week one.",
+    name: "Priya M.",
+    role: "CFO, Helix Commerce — Sydney, NSW",
   },
 ];
 

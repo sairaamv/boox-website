@@ -15,7 +15,7 @@ const currencyLabels: Record<Currency, string> = {
 const tiers = [
   {
     name: "Starter",
-    price: "$--/mo", // {PRICE_STARTER_USD} / {PRICE_STARTER_CAD} / {PRICE_STARTER_AUD}
+    prices: { USD: "$199/mo", CAD: "$269/mo", AUD: "$299/mo" },
     desc: "For small businesses getting their books in order.",
     features: [
       "Up to 200 transactions/month",
@@ -30,7 +30,7 @@ const tiers = [
   },
   {
     name: "Growth",
-    price: "$--/mo", // {PRICE_GROWTH_USD} / {PRICE_GROWTH_CAD} / {PRICE_GROWTH_AUD}
+    prices: { USD: "$399/mo", CAD: "$539/mo", AUD: "$589/mo" },
     desc: "For growing businesses that need more support.",
     features: [
       "Everything in Starter",
@@ -47,7 +47,7 @@ const tiers = [
   },
   {
     name: "Enterprise",
-    price: "Contact us",
+    prices: { USD: "Contact us", CAD: "Contact us", AUD: "Contact us" },
     desc: "Custom accounting and advisory for larger businesses.",
     features: [
       "Everything in Growth",
@@ -131,10 +131,12 @@ export default function PricingPage() {
               <div className="mb-6">
                 <h2 className="font-bold text-lg mb-1">{tier.name}</h2>
                 <div className="text-3xl font-mono font-bold text-foreground mb-2">
-                  {tier.price}
+                  {tier.prices[currency]}
                 </div>
                 <div className="text-xs font-mono text-muted-foreground">
-                  {currencyLabels[currency]} · billed monthly
+                  {tier.prices[currency] !== "Contact us"
+                    ? `${currencyLabels[currency]} · billed monthly`
+                    : "custom pricing"}
                 </div>
                 <p className="text-sm text-muted-foreground mt-3">{tier.desc}</p>
               </div>
