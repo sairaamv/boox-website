@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { Check, ArrowLeftRight } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Books & Beyond — built by accountants, powered by AI. 20+ credentialed professionals across the US, Canada, and Australia.",
+};
 
 const accountantPoints = [
   "Credentialed and country-certified professionals",

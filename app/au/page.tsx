@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import CtaButton from "@/components/cta-button";
+
+export const metadata: Metadata = {
+  title: "Australian Accounting & Tax Services",
+  description:
+    "ATO-registered bookkeeping, BAS lodgement, GST, and superannuation compliance for Australian businesses. Books & Beyond.",
+};
 
 const auServices = [
   {

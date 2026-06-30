@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import CtaButton from "@/components/cta-button";
+
+export const metadata: Metadata = {
+  title: "US Accounting & Tax Services",
+  description:
+    "IRS-compliant bookkeeping, federal and state tax filing, and payroll for US businesses. Books & Beyond.",
+};
 
 const usServices = [
   {

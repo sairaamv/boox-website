@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { BookOpen, FileText, Users, Search, BarChart2, Check } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description:
+    "Bookkeeping, tax filing, payroll, audit support, and CFO advisory — all jurisdictions covered by Books & Beyond.",
+};
 
 const services = [
   {
