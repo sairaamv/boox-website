@@ -9,6 +9,7 @@ import {
   MapPin,
 } from "lucide-react";
 import CtaButton from "@/components/cta-button";
+import Hero from "@/components/hero";
 
 const services = [
   {
@@ -82,40 +83,7 @@ const testimonials = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-24 text-center">
-        <div className="inline-flex items-center gap-2 text-xs font-mono border border-border rounded-lg px-3 py-1.5 text-muted-foreground mb-8">
-          Serving US · Canada · Australia
-        </div>
-        <h1 className="text-5xl sm:text-6xl font-bold text-foreground leading-tight mb-6">
-          Virtual Accounting.{" "}
-          <span className="text-brand-forest">Humans + AI.</span>
-        </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
-          Expert accountants backed by AI-powered workflows — faster closes,
-          cleaner books, audit-ready output. Serving businesses across the US,
-          Canada, and Australia.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-3 justify-center mb-14">
-          <CtaButton href="/contact" variant="primary">
-            Book a Call
-          </CtaButton>
-          <CtaButton href="/services" variant="secondary">
-            Get Started
-          </CtaButton>
-        </div>
-        {/* Trust badges */}
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          {["IRS-Compliant", "CRA-Certified", "ATO-Registered"].map((b) => (
-            <span
-              key={b}
-              className="text-xs font-mono border border-border rounded-lg px-4 py-2 text-muted-foreground bg-card"
-            >
-              {b}
-            </span>
-          ))}
-        </div>
-      </section>
+      <Hero />
 
       {/* Services strip */}
       <section className="bg-muted border-y border-border py-16">
