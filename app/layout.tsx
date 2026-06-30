@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     url: "https://booksnb.com",
     siteName: "Books & Beyond",
     type: "website",
-    images: [{ url: "/booksnb-icon.svg", width: 512, height: 512, alt: "Books & Beyond" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Books & Beyond — Virtual Accounting & Auditing" }],
   },
   twitter: {
     card: "summary",
     title: "Books & Beyond — Virtual Accounting & Auditing",
     description:
       "Expert accountants backed by AI-powered workflows for US, Canadian, and Australian businesses.",
-    images: ["/booksnb-icon.svg"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: [
