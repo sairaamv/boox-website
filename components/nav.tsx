@@ -23,6 +23,7 @@ function BooksnbLogo() {
       <svg viewBox="0 0 110 104" width="40" height="38" fill="none" aria-hidden="true" className="shrink-0">
           <path d="M55 34 L14 27 L14 70 L55 78 Z" fill="#0D9488" />
           <path d="M55 34 L96 27 L96 70 L55 78 Z" fill="#0D9488" />
+          <line x1="55" y1="34" x2="55" y2="78" stroke="white" strokeWidth="3" />
           <path d="M45 25 C49 31 61 31 65 25" stroke="#FF6B5C" strokeWidth="6" strokeLinecap="round" />
         </svg>
       <span
