@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -21,7 +20,11 @@ const countryLinks = [
 function BooksnbLogo() {
   return (
     <Link href="/" className="flex items-center gap-3 no-underline">
-      <Image src="/booksnb-mark.svg" alt="" width={40} height={38} aria-hidden className="shrink-0" style={{ color: "var(--brand-forest)" }} />
+      <svg viewBox="0 0 110 104" width="40" height="38" fill="none" aria-hidden="true" className="shrink-0">
+          <path d="M55 34 L14 27 L14 70 L55 78 Z" fill="var(--brand-forest)" />
+          <path d="M55 34 L96 27 L96 70 L55 78 Z" fill="var(--brand-forest)" opacity="0.35" />
+          <path d="M45 25 C49 31 61 31 65 25" stroke="#FF6B5C" strokeWidth="6" strokeLinecap="round" />
+        </svg>
       <span
         className="font-bold text-xl text-foreground"
         style={{ fontWeight: 900, letterSpacing: "-0.04em" }}
