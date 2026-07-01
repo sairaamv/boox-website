@@ -68,7 +68,7 @@ export default function ContactPage() {
               <p className="text-xs font-mono uppercase tracking-wider text-muted-foreground mb-3">
                 WhatsApp
               </p>
-              <span className="font-mono text-sm">+1 (---) --- ----</span>
+              <a href="tel:+14806190885" className="font-mono text-sm hover:text-brand-forest transition-colors">+1 (480) 619-0885</a>
             </div>
 
             <div>
