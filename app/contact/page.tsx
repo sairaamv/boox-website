@@ -17,7 +17,7 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("sending");
     try {
-      const res = await fetch("https://booksnb-contact.sairaamv.workers.dev", {
+      const res = await fetch("https://booksnb-contact.scbx.workers.dev", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
