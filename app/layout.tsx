@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -50,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={geistMono.variable}>
+    <html lang="en">
       <body className="antialiased font-sans bg-background text-foreground min-h-screen flex flex-col">
         <Nav />
         <main className="flex-1">{children}</main>

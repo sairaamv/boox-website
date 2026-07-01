@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,23 +8,34 @@
 :root {
   --background: #ffffff;
   --foreground: #1F2937;
-  --brand-forest: #0D9488;
-  --brand-forest-light: #10B981;
-  --brand-forest-deep: #0B7C72;
-  --brand-gradient: linear-gradient(150deg, #10B981, #0D9488);
-  --muted: #F2FBF8;
-  --muted-foreground: #7C8A86;
-  --border: #E1E8E6;
-  --card: #ffffff;
-  --destructive: #c0392b;
-  --ring: #0D9488;
-  --font-sora: 'Sora', system-ui, -apple-system, sans-serif;
+
+  /* Brand teal */
+  --brand-forest:       #0D9488;   /* primary — links, buttons, left ledger page */
+  --brand-forest-light: #14B8A6;   /* bright — gradient start, right ledger page */
+  --brand-forest-deep:  #0B7C72;   /* pressed / deep */
+  --brand-gradient: linear-gradient(150deg, #14B8A6, #0D9488);
+
+  /* Coral spark */
+  --bnb-coral:      #FF6B5C;       /* the "&", the smile, sparing accents */
+  --bnb-coral-soft: #FF8A7A;       /* coral on dark backgrounds */
+
+  /* Surfaces & neutrals */
+  --muted:            #F1FBF8;     /* light teal wash */
+  --muted-foreground: #8A9490;     /* secondary text */
+  --border:           #EEF2F1;     /* hairline borders */
+  --card:             #ffffff;
+  --destructive:      #c0392b;
+  --ring:             #0D9488;
+
+  /* Typography */
+  --bnb-font-display: 'Satoshi', system-ui, -apple-system, sans-serif;
+  --bnb-font-labels:  'Space Grotesk', ui-sans-serif, sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-sora);
+  font-family: var(--bnb-font-display);
 }
 
 @layer utilities {

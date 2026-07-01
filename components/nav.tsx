@@ -24,26 +24,18 @@ function BooksnbLogo() {
         className="flex items-center justify-center w-10 h-10 rounded-xl shrink-0"
         style={{ background: "var(--brand-gradient)" }}
       >
-        <svg
-          viewBox="0 0 110 96"
-          className="w-[56%] h-[56%] text-white"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="7.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M55 30 C44 22 26 22 14 28 L14 72 C26 66 44 66 55 72" />
-          <path d="M55 30 C66 22 84 22 96 28 L96 72 C84 66 66 66 55 72" />
-          <path d="M55 30 L55 72" />
+        <svg viewBox="0 0 110 104" className="w-[56%] h-[56%]" fill="none" aria-hidden="true">
+          <path d="M55 34 L14 27 L14 70 L55 78 Z" fill="#FFFFFF" />
+          <path d="M55 34 L96 27 L96 70 L55 78 Z" fill="#CFF5EE" />
+          <path d="M55 34 L55 78" stroke="#0D9488" strokeWidth="3" />
+          <path d="M45 25 C49 31 61 31 65 25" stroke="#FF6B5C" strokeWidth="6" strokeLinecap="round" />
         </svg>
       </span>
       <span
         className="font-bold text-xl text-foreground"
-        style={{ letterSpacing: "-0.04em" }}
+        style={{ fontWeight: 900, letterSpacing: "-0.04em" }}
       >
-        books<span className="text-brand-forest">nb</span>
+        books <span style={{ color: "var(--bnb-coral)" }}>&amp;</span> beyond
       </span>
     </Link>
   );
