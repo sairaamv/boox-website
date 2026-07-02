@@ -83,7 +83,7 @@ export default function ServicesPage() {
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Our Services</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Books & Beyond offers end-to-end accounting, tax, and advisory —
-          powered by expert humans and AI workflows.
+          delivered by expert humans through proven workflows.
         </p>
       </section>
 

@@ -4,7 +4,7 @@ import { Check, ArrowLeftRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Books & Beyond — built by accountants, powered by AI. 20+ credentialed professionals across the US, Canada, and Australia.",
+    "Books & Beyond — built by accountants, driven by process. 20+ credentialed professionals across the US, Canada, and Australia.",
 };
 
 const accountantPoints = [
@@ -20,7 +20,7 @@ const aiPoints = [
   "Flags anomalies before they become problems",
   "Speeds up reconciliation and close",
   "Consistent application of rules at scale",
-  "Humans review everything — no AI-only outputs",
+  "Humans review everything — no black-box outputs",
 ];
 
 const values = [
@@ -44,7 +44,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-5">
-          Built by accountants. Powered by AI.
+          Built by accountants. Driven by process.
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Books & Beyond started with a simple belief: small businesses deserve the same
@@ -64,9 +64,9 @@ export default function AboutPage() {
               the enterprise price tag.
             </p>
             <p>
-              We combine experienced accountants with AI-powered workflows to
+              We combine experienced accountants with streamlined processes to
               deliver faster month-end closes, cleaner books, and audit-ready
-              output. The AI handles the repetitive work. The accountants handle
+              output. The process handles the repetitive work. The accountants handle
               the judgment calls.
             </p>
             <p>
@@ -78,10 +78,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Humans + AI */}
+      {/* How we work */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <h2 className="text-2xl font-bold text-center mb-12">
-          What &ldquo;Humans + AI&rdquo; actually means
+          How we work
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-card border border-border rounded-lg p-8 shadow-sm">
@@ -108,7 +108,7 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-card border border-border rounded-lg p-8 shadow-sm">
-            <h3 className="font-semibold text-lg mb-4">Our AI</h3>
+            <h3 className="font-semibold text-lg mb-4">Our Process</h3>
             <ul className="space-y-3">
               {aiPoints.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">

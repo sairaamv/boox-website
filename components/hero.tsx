@@ -125,7 +125,7 @@ export default function Hero() {
             className="text-transparent bg-clip-text"
             style={{ backgroundImage: "var(--brand-gradient)" }}
           >
-            Humans + AI.
+            Done Right.
           </span>
         </motion.h1>
 
@@ -134,7 +134,7 @@ export default function Hero() {
           variants={item}
           className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          Expert accountants backed by AI-powered workflows — faster closes,
+          Expert accountants backed by proven processes — faster closes,
           cleaner books, audit-ready output. Serving businesses across the US,
           Canada, and Australia.
         </motion.p>

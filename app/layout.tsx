@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     template: "%s | Books & Beyond",
   },
   description:
-    "Expert accountants backed by AI-powered workflows. Faster closes, cleaner books, audit-ready output. Serving businesses in the US, Canada, and Australia.",
+    "Expert accountants backed by proven processes. Faster closes, cleaner books, audit-ready output. Serving businesses in the US, Canada, and Australia.",
   metadataBase: new URL("https://booksnb.com"),
   alternates: { canonical: "/" },
   openGraph: {
     title: "Books & Beyond — Virtual Accounting & Auditing",
     description:
-      "Expert accountants backed by AI-powered workflows for US, Canadian, and Australian businesses.",
+      "Expert accountants backed by proven processes for US, Canadian, and Australian businesses.",
     url: "https://booksnb.com",
     siteName: "Books & Beyond",
     type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Books & Beyond — Virtual Accounting & Auditing",
     description:
-      "Expert accountants backed by AI-powered workflows for US, Canadian, and Australian businesses.",
+      "Expert accountants backed by proven processes for US, Canadian, and Australian businesses.",
     images: ["/og-image.png"],
   },
   icons: {

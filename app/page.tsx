@@ -50,7 +50,7 @@ const aiPoints = [
   "Automates transaction categorization and reconciliation",
   "Flags anomalies before they become problems",
   "Speeds up month-end close without cutting corners",
-  "Humans review everything — no AI-only outputs",
+  "Humans review everything — no black-box outputs",
 ];
 
 const countries = [
@@ -62,7 +62,7 @@ const countries = [
 const testimonials = [
   {
     quote:
-      "We closed our books 5 days faster last quarter. The combination of a dedicated accountant and their AI tools is genuinely different from every firm we've used before.",
+      "We closed our books 5 days faster last quarter. The combination of a dedicated accountant and their efficient processes is genuinely different from every firm we've used before.",
     name: "Sarah K.",
     role: "Co-Founder, Brightpath Media — Austin, TX",
   },
@@ -109,13 +109,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Humans + AI */}
+      {/* Humans + Process */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-3">Expert humans, powered by AI</h2>
+          <h2 className="text-3xl font-bold mb-3">Expert humans, efficient process</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
             We didn&apos;t replace accountants with software. We gave experienced
-            accountants better tools.
+            accountants better processes.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -131,7 +131,7 @@ export default function HomePage() {
             </ul>
           </div>
           <div className="bg-card border border-border rounded-lg p-8 shadow-sm">
-            <h3 className="font-semibold text-lg mb-4">Our AI</h3>
+            <h3 className="font-semibold text-lg mb-4">Our Process</h3>
             <ul className="space-y-3">
               {aiPoints.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
