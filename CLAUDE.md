@@ -21,6 +21,12 @@ Final brand identity is from `booksnb.zip` handoff — do not change tokens with
 - **Color tokens:** defined in `globals.css` — `--brand-forest`, `--bnb-coral`, `--brand-gradient`, etc.
 - **Wordmark:** `books & beyond`, Satoshi 900, lowercase, `letter-spacing: -0.04em`, `&` in coral
 
+## Email
+
+- **Contact form → notification:** Worker sends email to `sai@cobuildx.ai` from `hello@booksnb.com` on every submission. Uses `ctx.waitUntil()` — without it the runtime cuts the promise and email is silently dropped.
+- **Catch-all routing:** Any email to `*@booksnb.com` forwards to `sai@cobuildx.ai` via Cloudflare Email Routing.
+- **Worker deploy:** `cd worker && npx wrangler deploy` — separate from frontend deploy.
+
 ## Key files
 
 - `app/layout.tsx` — root metadata (icons, OG, fonts)
