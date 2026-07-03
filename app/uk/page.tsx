@@ -4,11 +4,11 @@ import CtaButton from "@/components/cta-button";
 import JsonLd from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "US Accounting & Tax Services",
+  title: "UK Accounting & Tax Services",
   description:
-    "IRS-compliant bookkeeping, federal and state tax filing, and payroll for US businesses. Books & Beyond.",
+    "HMRC-compliant bookkeeping, VAT returns, PAYE payroll, and Companies House filings for UK businesses. Books & Beyond.",
   alternates: {
-    canonical: "https://booksnb.com/us",
+    canonical: "https://booksnb.com/uk",
     languages: {
       "en-US": "https://booksnb.com/us",
       "en-CA": "https://booksnb.com/ca",
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "AccountingService",
-  name: "Books & Beyond — US Accounting Services",
-  url: "https://booksnb.com/us",
+  name: "Books & Beyond — UK Accounting Services",
+  url: "https://booksnb.com/uk",
   description:
-    "IRS-compliant bookkeeping, federal and state tax filing, and payroll for US businesses.",
+    "HMRC-compliant bookkeeping, VAT returns, PAYE payroll, and Companies House filings for UK businesses.",
   email: "hello@booksnb.com",
-  areaServed: { "@type": "Country", name: "United States" },
-  knowsAbout: ["IRS compliance", "GAAP bookkeeping", "QuickBooks", "Xero", "US payroll", "sales tax nexus"],
+  areaServed: { "@type": "Country", name: "United Kingdom" },
+  knowsAbout: ["HMRC compliance", "VAT returns", "PAYE", "RTI", "Corporation Tax", "Companies House", "FRS 102", "Xero", "Sage"],
 };
 
 const breadcrumbSchema = {
@@ -37,39 +37,59 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://booksnb.com" },
-    { "@type": "ListItem", position: 2, name: "US Accounting Services", item: "https://booksnb.com/us" },
+    { "@type": "ListItem", position: 2, name: "UK Accounting Services", item: "https://booksnb.com/uk" },
   ],
 };
 
-const usServices = [
+const ukServices = [
   {
     title: "Bookkeeping",
-    desc: "GAAP-aligned bookkeeping with daily reconciliations and monthly financial statements.",
-    features: ["Daily transaction categorization", "Monthly P&L and balance sheet", "QuickBooks and Xero support", "GAAP-compliant reporting"],
+    desc: "FRS 102-aligned bookkeeping with monthly management accounts and Making Tax Digital (MTD) ready records.",
+    features: ["Daily transaction categorization", "Monthly P&L and balance sheet", "Xero, Sage, and QuickBooks support", "MTD-compatible record-keeping"],
   },
   {
     title: "Tax Filing",
-    desc: "Federal and state tax compliance handled end-to-end, including sales tax nexus tracking.",
-    features: ["Federal corporate income tax", "State income tax returns", "1099 filing and contractor management", "Sales tax nexus tracking and filing"],
+    desc: "Corporation Tax (CT600), self-assessment, and iXBRL-tagged accounts filed with HMRC on time.",
+    features: ["Corporation Tax CT600 filing", "iXBRL-tagged statutory accounts", "Self-assessment tax returns", "R&D tax credit claims"],
   },
   {
-    title: "Payroll",
-    desc: "Full-service payroll processing with quarterly compliance filings.",
-    features: ["Payroll processing and direct deposit", "Quarterly 941 filings", "W-2 and W-3 preparation", "Multi-state payroll support"],
+    title: "VAT",
+    desc: "VAT registration, quarterly MTD-compliant returns, and scheme selection for maximum efficiency.",
+    features: ["VAT registration and de-registration", "Quarterly MTD VAT returns", "Flat Rate and Cash Accounting scheme management", "VAT enquiry support"],
   },
   {
-    title: "Audit Support",
-    desc: "IRS audit prep, documentation, and workpaper preparation.",
-    features: ["IRS correspondence handling", "Audit-ready workpapers", "Internal control documentation", "Supporting schedules and reconciliations"],
+    title: "Payroll & PAYE",
+    desc: "RTI-compliant payroll, auto-enrolment pension management, and year-end P60 / P11D filing.",
+    features: ["Monthly payroll processing and payslips", "RTI Full Payment Submission (FPS)", "Auto-enrolment pension contributions", "P60, P11D, and P45 preparation"],
+  },
+  {
+    title: "Companies House",
+    desc: "Annual accounts, confirmation statements, and director filings — all lodged on time.",
+    features: ["Annual accounts preparation and filing", "Confirmation statement (CS01)", "Director appointment / resignation filings", "Registered office and PSC register maintenance"],
   },
   {
     title: "CFO Advisory",
-    desc: "Strategic financial guidance for growing US businesses.",
+    desc: "Management reporting and strategic financial guidance for growing UK businesses.",
     features: ["Monthly management reporting", "Cash flow forecasting", "Budget vs. actuals analysis", "Board-ready financial packages"],
   },
 ];
 
-export default function USPage() {
+const whyBooksAndBeyond = [
+  {
+    title: "MTD-ready from day one",
+    desc: "All VAT filings submitted via MTD-compatible software — no bridging workarounds needed.",
+  },
+  {
+    title: "Corporation Tax and Companies House handled together",
+    desc: "We file your CT600 and Companies House accounts at the same time — no duplication, no gaps.",
+  },
+  {
+    title: "Xero and Sage specialists",
+    desc: "We work in your existing software and keep your chart of accounts clean and audit-ready.",
+  },
+];
+
+export default function UKPage() {
   return (
     <>
       <JsonLd schema={localBusinessSchema} />
@@ -77,14 +97,14 @@ export default function USPage() {
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <div className="inline-flex text-xs font-mono border border-border rounded-lg px-3 py-1.5 text-muted-foreground mb-6">
-          IRS-compliant reporting
+          HMRC-compliant, MTD-ready
         </div>
         <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-5 max-w-2xl">
-          IRS-Compliant Accounting for US Businesses
+          HMRC-Compliant Accounting for UK Businesses
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl mb-8">
-          From federal tax filings to state sales tax nexus — we handle the
-          numbers while you run the business.
+          VAT returns, PAYE payroll, Corporation Tax, and Companies House filings
+          — we handle the lot while you run your business.
         </p>
         <CtaButton href="/contact" variant="primary">
           Book a Call
@@ -94,9 +114,9 @@ export default function USPage() {
       {/* Services */}
       <section className="bg-muted border-y border-border py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl font-bold mb-10">Services for US businesses</h2>
+          <h2 className="text-2xl font-bold mb-10">Services for UK businesses</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {usServices.map((s) => (
+            {ukServices.map((s) => (
               <div key={s.title} className="bg-card border border-border rounded-lg p-6 shadow-sm">
                 <h3 className="font-semibold text-lg mb-2">{s.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{s.desc}</p>
@@ -116,22 +136,9 @@ export default function USPage() {
 
       {/* Why Books & Beyond */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
-        <h2 className="text-2xl font-bold mb-10">Why Books & Beyond for US businesses</h2>
+        <h2 className="text-2xl font-bold mb-10">Why Books & Beyond for UK businesses</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {[
-            {
-              title: "IRS-aligned reporting",
-              desc: "All financial statements and filings produced to IRS standards. No surprises at tax time.",
-            },
-            {
-              title: "Multi-state sales tax handled",
-              desc: "We track nexus, calculate rates, and file returns across every state where you have obligations.",
-            },
-            {
-              title: "QuickBooks + Xero certified",
-              desc: "We work in your existing software — no migration required.",
-            },
-          ].map((vp) => (
+          {whyBooksAndBeyond.map((vp) => (
             <div key={vp.title} className="bg-card border border-border rounded-lg p-6 shadow-sm">
               <h3 className="font-semibold mb-2">{vp.title}</h3>
               <p className="text-sm text-muted-foreground">{vp.desc}</p>
@@ -147,7 +154,7 @@ export default function USPage() {
             Software we support
           </p>
           <div className="flex justify-center gap-8">
-            {["QuickBooks", "Xero"].map((s) => (
+            {["Xero", "Sage", "QuickBooks"].map((s) => (
               <span key={s} className="text-sm font-medium text-muted-foreground border border-border rounded-lg px-4 py-2">
                 {s}
               </span>
@@ -159,18 +166,18 @@ export default function USPage() {
       {/* Testimonial */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <div className="bg-card border border-border rounded-lg p-8 shadow-sm max-w-xl mx-auto text-center">
-          <p className="text-sm text-muted-foreground italic mb-4">&ldquo;Switched to Books &amp; Beyond after my third IRS headache in two years. Our books are cleaner, filings are on time, and I finally understand my own P&amp;L.&rdquo;</p>
-          <div className="text-sm font-semibold">Marcus D.</div>
-          <div className="text-xs text-muted-foreground">Owner, Redwood Supply Co. — Portland, OR</div>
+          <p className="text-sm text-muted-foreground italic mb-4">&ldquo;VAT, PAYE, Corporation Tax — they handle it all without me having to chase anyone. Our Companies House filings have been on time every year since we switched.&rdquo;</p>
+          <div className="text-sm font-semibold">James W.</div>
+          <div className="text-xs text-muted-foreground">Founder, Meridian Studio — London, UK</div>
         </div>
       </section>
 
       {/* CTA */}
       <section className="bg-brand-forest text-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Let&apos;s sort your US books.</h2>
+          <h2 className="text-3xl font-bold mb-4">Let&apos;s sort your UK books.</h2>
           <p className="text-white/80 mb-8">
-            Books & Beyond — IRS-compliant, thorough, and built for your business size.
+            Books & Beyond — HMRC-compliant, MTD-ready, and no-nonsense about your numbers.
           </p>
           <a
             href="/contact"

@@ -62,6 +62,8 @@ export default function Footer() {
                 { href: "/us", label: "United States" },
                 { href: "/ca", label: "Canada" },
                 { href: "/au", label: "Australia" },
+                { href: "/sg", label: "Singapore" },
+                { href: "/uk", label: "United Kingdom" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

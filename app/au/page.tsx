@@ -1,11 +1,44 @@
 import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import CtaButton from "@/components/cta-button";
+import JsonLd from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: "Australian Accounting & Tax Services",
   description:
     "ATO-registered bookkeeping, BAS lodgement, GST, and superannuation compliance for Australian businesses. Books & Beyond.",
+  alternates: {
+    canonical: "https://booksnb.com/au",
+    languages: {
+      "en-US": "https://booksnb.com/us",
+      "en-CA": "https://booksnb.com/ca",
+      "en-AU": "https://booksnb.com/au",
+      "en-GB": "https://booksnb.com/uk",
+      "en-SG": "https://booksnb.com/sg",
+      "x-default": "https://booksnb.com",
+    },
+  },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  name: "Books & Beyond — Australian Accounting Services",
+  url: "https://booksnb.com/au",
+  description:
+    "ATO-registered bookkeeping, BAS lodgement, GST, STP payroll, and superannuation compliance for Australian businesses.",
+  email: "hello@booksnb.com",
+  areaServed: { "@type": "Country", name: "Australia" },
+  knowsAbout: ["ATO compliance", "BAS lodgement", "GST", "STP", "superannuation", "AASB", "Xero", "MYOB"],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://booksnb.com" },
+    { "@type": "ListItem", position: 2, name: "Australian Accounting Services", item: "https://booksnb.com/au" },
+  ],
 };
 
 const auServices = [
@@ -54,6 +87,8 @@ const whyBooksAndBeyond = [
 export default function AUPage() {
   return (
     <>
+      <JsonLd schema={localBusinessSchema} />
+      <JsonLd schema={breadcrumbSchema} />
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <div className="inline-flex text-xs font-mono border border-border rounded-lg px-3 py-1.5 text-muted-foreground mb-6">

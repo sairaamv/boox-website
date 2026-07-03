@@ -15,6 +15,8 @@ const countryLinks = [
   { href: "/us", label: "US" },
   { href: "/ca", label: "CA" },
   { href: "/au", label: "AU" },
+  { href: "/sg", label: "SG" },
+  { href: "/uk", label: "UK" },
 ];
 
 function BooksnbLogo() {

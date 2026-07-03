@@ -1,11 +1,44 @@
 import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import CtaButton from "@/components/cta-button";
+import JsonLd from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: "Canadian Accounting & Tax Services",
   description:
     "CRA-compliant bookkeeping, T2 corporate returns, HST/GST, and payroll for Canadian businesses. Books & Beyond.",
+  alternates: {
+    canonical: "https://booksnb.com/ca",
+    languages: {
+      "en-US": "https://booksnb.com/us",
+      "en-CA": "https://booksnb.com/ca",
+      "en-AU": "https://booksnb.com/au",
+      "en-GB": "https://booksnb.com/uk",
+      "en-SG": "https://booksnb.com/sg",
+      "x-default": "https://booksnb.com",
+    },
+  },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  name: "Books & Beyond — Canadian Accounting Services",
+  url: "https://booksnb.com/ca",
+  description:
+    "CRA-compliant bookkeeping, T2 corporate returns, GST/HST filing, and payroll for Canadian businesses.",
+  email: "hello@booksnb.com",
+  areaServed: { "@type": "Country", name: "Canada" },
+  knowsAbout: ["CRA compliance", "GST/HST", "T2 returns", "ASPE", "IFRS", "QuickBooks", "Xero", "Wave"],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://booksnb.com" },
+    { "@type": "ListItem", position: 2, name: "Canadian Accounting Services", item: "https://booksnb.com/ca" },
+  ],
 };
 
 const caServices = [
@@ -54,6 +87,8 @@ const whyBooksAndBeyond = [
 export default function CAPage() {
   return (
     <>
+      <JsonLd schema={localBusinessSchema} />
+      <JsonLd schema={breadcrumbSchema} />
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <div className="inline-flex text-xs font-mono border border-border rounded-lg px-3 py-1.5 text-muted-foreground mb-6">
