@@ -90,7 +90,7 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6 shadow-sm">
-              <h3 className="font-semibold mb-2">Based in:</h3>
+              <h3 className="font-semibold mb-2">Serving clients in:</h3>
               <div className="space-y-1">
                 {["United States", "Canada", "Australia"].map((label) => (
                   <div key={label} className="flex items-center gap-2 text-sm text-muted-foreground">
