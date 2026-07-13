@@ -106,7 +106,7 @@ export default function ArticlePage({ params }: Props) {
         {/* Footer CTA */}
         <div className="mt-16 pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground mb-4">
-            Books &amp; Beyond handles bookkeeping, tax filing, and payroll for businesses in the US, Canada, and Australia.
+            Books &amp; Beyond handles bookkeeping, tax filing, and payroll for businesses in the US, Canada, Australia, Singapore, and UK.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link

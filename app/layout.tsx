@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
+import JsonLd from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: {
@@ -9,9 +10,17 @@ export const metadata: Metadata = {
     template: "%s | Books & Beyond",
   },
   description:
-    "Expert accountants backed by proven processes. Faster closes, cleaner books, audit-ready output. Serving businesses in the US, Canada, and Australia.",
+    "Expert accountants backed by proven processes. Faster closes, cleaner books, audit-ready output. Serving businesses in the US, Canada, Australia, Singapore, and UK.",
   metadataBase: new URL("https://booksnb.com"),
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "https://booksnb.com/us",
+      "en-CA": "https://booksnb.com/ca",
+      "en-AU": "https://booksnb.com/au",
+      "x-default": "https://booksnb.com",
+    },
+  },
   openGraph: {
     title: "Books & Beyond — Virtual Accounting & Auditing",
     description:
@@ -22,7 +31,7 @@ export const metadata: Metadata = {
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Books & Beyond — Virtual Accounting & Auditing" }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Books & Beyond — Virtual Accounting & Auditing",
     description:
       "Expert accountants backed by proven processes for US, Canadian, and Australian businesses.",
@@ -37,6 +46,24 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Books & Beyond",
+  url: "https://booksnb.com",
+  logo: "https://booksnb.com/booksnb-icon.svg",
+  description:
+    "Virtual accounting and auditing firm serving businesses in the US, Canada, Australia, Singapore, and UK.",
+  email: "hello@booksnb.com",
+  areaServed: ["US", "CA", "AU"],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    email: "hello@booksnb.com",
+    availableLanguage: "English",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -45,6 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased font-sans bg-background text-foreground min-h-screen flex flex-col">
+        <JsonLd schema={organizationSchema} />
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

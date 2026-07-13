@@ -57,7 +57,7 @@ export default function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               {l.label}
             </Link>
@@ -108,7 +108,7 @@ export default function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-sm text-muted-foreground hover:text-foreground"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground"
                 onClick={() => setOpen(false)}
               >
                 {l.label}

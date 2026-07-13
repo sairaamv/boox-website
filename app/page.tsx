@@ -20,7 +20,7 @@ const services = [
   {
     Icon: FileText,
     title: "Tax Filing",
-    desc: "Corporate returns, sales tax, and annual filings for US, Canada, and Australia.",
+    desc: "Corporate returns, sales tax, and annual filings for US, Canada, Australia, Singapore, and UK.",
   },
   {
     Icon: Users,

@@ -5,7 +5,7 @@ import { articles } from "./data";
 export const metadata: Metadata = {
   title: "Accounting Insights",
   description:
-    "Practical guides on bookkeeping, tax filing, payroll, and compliance for small businesses in the US, Canada, and Australia.",
+    "Practical guides on bookkeeping, tax filing, payroll, and compliance for small businesses in the US, Canada, Australia, Singapore, and UK.",
   alternates: { canonical: "https://booksnb.com/blog" },
 };
 

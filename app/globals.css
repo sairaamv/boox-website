@@ -7,7 +7,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1F2937;
+  --foreground: #111827;           /* headings, prices, key values */
 
   /* Brand teal */
   --brand-forest:       #0D9488;   /* primary — links, buttons, left ledger page */
@@ -21,8 +21,8 @@
 
   /* Surfaces & neutrals */
   --muted:            #F1FBF8;     /* light teal wash */
-  --muted-foreground: #8A9490;     /* secondary text */
-  --border:           #EEF2F1;     /* hairline borders */
+  --muted-foreground: #374151;     /* body copy, nav links, descriptions */
+  --border:           #D4E0DD;     /* card borders */
   --card:             #ffffff;
   --destructive:      #c0392b;
   --ring:             #0D9488;

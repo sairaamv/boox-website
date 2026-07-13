@@ -111,7 +111,7 @@ export default function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-forest opacity-60" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-forest" />
             </span>
-            Serving US · Canada · Australia
+            Serving US · Canada · Australia · Singapore · UK
           </div>
         </motion.div>
 
@@ -120,12 +120,12 @@ export default function Hero() {
           variants={item}
           className="text-5xl sm:text-6xl font-bold text-foreground leading-tight mb-6"
         >
-          Virtual Accounting.{" "}
+          Stop chasing your books.{" "}
           <span
             className="text-transparent bg-clip-text"
             style={{ backgroundImage: "var(--brand-gradient)" }}
           >
-            Done Right.
+            Start growing.
           </span>
         </motion.h1>
 
@@ -134,9 +134,8 @@ export default function Hero() {
           variants={item}
           className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          Expert accountants backed by proven processes — faster closes,
-          cleaner books, audit-ready output. Serving businesses across the US,
-          Canada, and Australia.
+          A dedicated virtual accounting team that closes on time, every
+          time — across the US, Canada, Australia, Singapore, and UK.
         </motion.p>
 
         {/* CTAs */}
@@ -157,7 +156,7 @@ export default function Hero() {
           variants={item}
           className="flex flex-col sm:flex-row gap-3 justify-center mb-16"
         >
-          {["IRS-Compliant", "CRA-Certified", "ATO-Registered"].map((b) => (
+          {["IRS-Compliant", "CRA-Certified", "ATO-Registered", "IRAS-Compliant", "HMRC-Registered"].map((b) => (
             <span
               key={b}
               className="text-xs font-mono border border-border rounded-lg px-4 py-2 text-muted-foreground bg-card/80"

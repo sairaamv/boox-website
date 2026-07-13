@@ -1,21 +1,9 @@
-"use client";
-
-import { useState } from "react";
 import { Check } from "lucide-react";
 import CtaButton from "@/components/cta-button";
-
-type Currency = "USD" | "CAD" | "AUD";
-
-const currencyLabels: Record<Currency, string> = {
-  USD: "USD $",
-  CAD: "CAD $",
-  AUD: "AUD $",
-};
 
 const tiers = [
   {
     name: "Starter",
-    prices: { USD: "$199/mo", CAD: "$269/mo", AUD: "$299/mo" },
     desc: "For small businesses getting their books in order.",
     features: [
       "Up to 200 transactions/month",
@@ -30,7 +18,6 @@ const tiers = [
   },
   {
     name: "Growth",
-    prices: { USD: "$399/mo", CAD: "$539/mo", AUD: "$589/mo" },
     desc: "For growing businesses that need more support.",
     features: [
       "Everything in Starter",
@@ -47,7 +34,6 @@ const tiers = [
   },
   {
     name: "Enterprise",
-    prices: { USD: "Contact us", CAD: "Contact us", AUD: "Contact us" },
     desc: "Custom accounting and advisory for larger businesses.",
     features: [
       "Everything in Growth",
@@ -84,33 +70,14 @@ const faqs = [
 ];
 
 export default function PricingPage() {
-  const [currency, setCurrency] = useState<Currency>("USD");
-
   return (
     <>
       {/* Header */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Pricing</h1>
         <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-8">
-          Transparent plans for every stage of your business.
+          Plans built around your business — get a quote in one call.
         </p>
-
-        {/* Currency toggle */}
-        <div className="inline-flex border border-border rounded-lg overflow-hidden">
-          {(["USD", "CAD", "AUD"] as Currency[]).map((c) => (
-            <button
-              key={c}
-              onClick={() => setCurrency(c)}
-              className={`px-5 py-2 text-sm font-mono transition-colors ${
-                currency === c
-                  ? "bg-brand-forest text-white"
-                  : "text-muted-foreground hover:bg-muted"
-              }`}
-            >
-              {c}
-            </button>
-          ))}
-        </div>
       </section>
 
       {/* Pricing cards */}
@@ -130,14 +97,6 @@ export default function PricingPage() {
               )}
               <div className="mb-6">
                 <h2 className="font-bold text-lg mb-1">{tier.name}</h2>
-                <div className="text-3xl font-mono font-bold text-foreground mb-2">
-                  {tier.prices[currency]}
-                </div>
-                <div className="text-xs font-mono text-muted-foreground">
-                  {tier.prices[currency] !== "Contact us"
-                    ? `${currencyLabels[currency]} · billed monthly`
-                    : "custom pricing"}
-                </div>
                 <p className="text-sm text-muted-foreground mt-3">{tier.desc}</p>
               </div>
               <ul className="space-y-2 mb-8 flex-1">
@@ -159,7 +118,7 @@ export default function PricingPage() {
           ))}
         </div>
         <p className="text-xs text-muted-foreground text-center mt-6 font-mono">
-          All prices shown in {currencyLabels[currency]}. Plans are billed monthly. Annual
+          Pricing is scoped to your transaction volume and complexity. Annual
           billing available — ask us.
         </p>
       </section>

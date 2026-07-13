@@ -4,7 +4,8 @@ import { Check, ArrowLeftRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Books & Beyond — built by accountants, driven by process. 20+ credentialed professionals across the US, Canada, and Australia.",
+    "Books & Beyond — built by accountants, driven by process. 20+ credentialed professionals across the US, Canada, Australia, Singapore, and UK.",
+  alternates: { canonical: "https://booksnb.com/about" },
 };
 
 const accountantPoints = [
@@ -140,7 +141,7 @@ export default function AboutPage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <h2 className="text-2xl font-bold mb-4 text-center">The team</h2>
         <p className="text-muted-foreground text-center mb-10 max-w-xl mx-auto">
-          A distributed team of credentialed accountants — CPAs, CAs, and CPAs (AU) — embedded across the US, Canada, and Australia. Every client has a named accountant who knows their books.
+          A distributed team of credentialed accountants — CPAs, CAs, CPAs (AU), and chartered accountants (SG/UK) — embedded across the US, Canada, Australia, Singapore, and UK. Every client has a named accountant who knows their books.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
           {[

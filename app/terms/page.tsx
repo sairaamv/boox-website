@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "Terms governing use of booksnb.com and Books & Beyond services.",
+  robots: { index: false, follow: false },
+};
+
 export default function TermsPage() {
   return (
     <section className="max-w-3xl mx-auto px-4 sm:px-6 py-16">

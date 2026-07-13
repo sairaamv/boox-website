@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "How Books & Beyond collects, uses, and protects your personal and financial data.",
+  robots: { index: false, follow: false },
+};
+
 export default function PrivacyPage() {
   return (
     <section className="max-w-3xl mx-auto px-4 sm:px-6 py-16">

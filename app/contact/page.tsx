@@ -85,14 +85,14 @@ export default function ContactPage() {
                 Time zones
               </p>
               <p className="text-sm text-muted-foreground">
-                Operating across US, Canada, and Australia time zones.
+                Operating across US, Canada, Australia, Singapore, and UK time zones.
               </p>
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6 shadow-sm">
               <h3 className="font-semibold mb-2">Serving clients in:</h3>
               <div className="space-y-1">
-                {["United States", "Canada", "Australia"].map((label) => (
+                {["United States", "Canada", "Australia", "Singapore", "United Kingdom"].map((label) => (
                   <div key={label} className="flex items-center gap-2 text-sm text-muted-foreground">
                     <span>{label}</span>
                   </div>

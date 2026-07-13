@@ -1,10 +1,94 @@
 import type { Metadata } from "next";
 import { BookOpen, FileText, Users, Search, BarChart2, Check } from "lucide-react";
+import JsonLd from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
     "Bookkeeping, tax filing, payroll, audit support, and CFO advisory — all jurisdictions covered by Books & Beyond.",
+  alternates: { canonical: "https://booksnb.com/services" },
+};
+
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Books & Beyond Services",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Service",
+        name: "Bookkeeping",
+        serviceType: "Bookkeeping",
+        description:
+          "Accurate daily reconciliations, transaction categorization, and monthly reporting for US, Canadian, and Australian businesses.",
+        provider: { "@type": "Organization", name: "Books & Beyond" },
+        areaServed: ["US", "CA", "AU"],
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Service",
+        name: "Tax Filing",
+        serviceType: "Tax Preparation",
+        description:
+          "Federal, state, and corporate tax filing across IRS, CRA, and ATO jurisdictions.",
+        provider: { "@type": "Organization", name: "Books & Beyond" },
+        areaServed: ["US", "CA", "AU"],
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Service",
+        name: "Payroll",
+        serviceType: "Payroll Services",
+        description:
+          "End-to-end payroll processing compliant with W-2, T4, and STP requirements.",
+        provider: { "@type": "Organization", name: "Books & Beyond" },
+        areaServed: ["US", "CA", "AU"],
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      item: {
+        "@type": "Service",
+        name: "Audit Support",
+        serviceType: "Audit Support",
+        description:
+          "Audit-ready workpapers and IRS/CRA/ATO audit response support.",
+        provider: { "@type": "Organization", name: "Books & Beyond" },
+        areaServed: ["US", "CA", "AU"],
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      item: {
+        "@type": "Service",
+        name: "CFO Advisory",
+        serviceType: "Financial Advisory",
+        description:
+          "Strategic financial guidance, management reporting, and cash flow forecasting.",
+        provider: { "@type": "Organization", name: "Books & Beyond" },
+        areaServed: ["US", "CA", "AU"],
+      },
+    },
+  ],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://booksnb.com" },
+    { "@type": "ListItem", position: 2, name: "Services", item: "https://booksnb.com/services" },
+  ],
 };
 
 const services = [
@@ -78,6 +162,8 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd schema={servicesSchema} />
+      <JsonLd schema={breadcrumbSchema} />
       {/* Header */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Our Services</h1>
