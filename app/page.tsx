@@ -57,6 +57,8 @@ const countries = [
   { name: "United States", href: "/us", code: "IRS" },
   { name: "Canada", href: "/ca", code: "CRA" },
   { name: "Australia", href: "/au", code: "ATO" },
+  { name: "Singapore", href: "/sg", code: "IRAS" },
+  { name: "United Kingdom", href: "/uk", code: "HMRC" },
 ];
 
 const testimonials = [
@@ -151,7 +153,7 @@ export default function HomePage() {
           <p className="text-muted-foreground mb-10">
             We tailor our work to your local tax authority and compliance requirements.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
             {countries.map((c) => (
               <Link
                 key={c.href}

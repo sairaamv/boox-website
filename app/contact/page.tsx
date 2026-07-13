@@ -9,7 +9,6 @@ export default function ContactPage() {
     name: "",
     email: "",
     company: "",
-    country: "",
     message: "",
   });
 
@@ -62,13 +61,6 @@ export default function ContactPage() {
               >
                 hello@booksnb.com
               </a>
-            </div>
-
-            <div>
-              <p className="text-xs font-mono uppercase tracking-wider text-muted-foreground mb-3">
-                WhatsApp
-              </p>
-              <a href="tel:+14806190885" className="font-mono text-sm hover:text-brand-forest transition-colors">+1 (480) 619-0885</a>
             </div>
 
             <div>
@@ -158,25 +150,6 @@ export default function ContactPage() {
                     className="w-full border border-border rounded-lg px-3 py-2 text-sm bg-background focus:outline-none focus:ring-1 focus:ring-ring"
                     placeholder="Your company name"
                   />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium mb-1.5" htmlFor="country">
-                    Country
-                  </label>
-                  <select
-                    id="country"
-                    name="country"
-                    required
-                    value={form.country}
-                    onChange={handleChange}
-                    className="w-full border border-border rounded-lg px-3 py-2 text-sm bg-background focus:outline-none focus:ring-1 focus:ring-ring"
-                  >
-                    <option value="">Select your country</option>
-                    <option value="us">United States</option>
-                    <option value="ca">Canada</option>
-                    <option value="au">Australia</option>
-                  </select>
                 </div>
 
                 <div>

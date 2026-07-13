@@ -7,17 +7,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-3 no-underline">
-              <span
-                className="flex items-center justify-center w-9 h-9 rounded-xl shrink-0"
-                style={{ background: "var(--brand-gradient)" }}
-              >
-                <svg viewBox="0 0 110 104" className="w-[56%] h-[56%]" fill="none" aria-hidden="true">
-                  <path d="M55 34 L14 27 L14 70 L55 78 Z" fill="#FFFFFF" />
-                  <path d="M55 34 L96 27 L96 70 L55 78 Z" fill="#CFF5EE" />
-                  <path d="M55 34 L55 78" stroke="#0D9488" strokeWidth="3" />
-                  <path d="M45 25 C49 31 61 31 65 25" stroke="#FF6B5C" strokeWidth="6" strokeLinecap="round" />
-                </svg>
-              </span>
+              <svg viewBox="0 0 110 104" width="36" height="34" fill="none" aria-hidden="true" className="shrink-0">
+                <path d="M55 34 L14 27 L14 70 L55 78 Z" fill="#0D9488" />
+                <path d="M55 34 L96 27 L96 70 L55 78 Z" fill="#14B8A6" />
+                <path d="M55 34 L55 78" stroke="#F1FBF8" strokeWidth="3" />
+                <path d="M45 25 C49 31 61 31 65 25" stroke="#FF6B5C" strokeWidth="6" strokeLinecap="round" />
+              </svg>
               <span
                 className="font-bold text-lg text-foreground"
                 style={{ fontWeight: 900, letterSpacing: "-0.04em" }}

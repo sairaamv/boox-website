@@ -6,7 +6,7 @@ import CtaButton from "@/components/cta-button";
 
 const stats = [
   { label: "Faster month-end close", value: 5, suffix: "x", prefix: "" },
-  { label: "Transactions reconciled", value: 2847, suffix: "", prefix: "" },
+  { label: "Credentialed accountants", value: 20, suffix: "+", prefix: "" },
   { label: "Filing accuracy", value: 99.8, suffix: "%", prefix: "" },
 ];
 
@@ -78,30 +78,25 @@ const item = {
 export default function Hero() {
   return (
     <section className="relative overflow-hidden max-w-6xl mx-auto px-4 sm:px-6 py-24 text-center">
-      {/* Background blobs */}
+      {/* Background: dot grid + single glow */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10"
-      >
-        <div
-          className="absolute -top-24 -left-24 w-[480px] h-[480px] rounded-full opacity-25 blur-3xl animate-blob"
-          style={{ background: "var(--brand-gradient)" }}
-        />
-        <div
-          className="absolute -bottom-24 -right-16 w-[400px] h-[400px] rounded-full opacity-20 blur-3xl animate-blob"
-          style={{
-            background: "var(--brand-gradient)",
-            animationDelay: "2.5s",
-          }}
-        />
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] rounded-full opacity-10 blur-3xl animate-blob"
-          style={{
-            background: "var(--brand-gradient)",
-            animationDelay: "5s",
-          }}
-        />
-      </div>
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, var(--border) 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
+          maskImage:
+            "radial-gradient(ellipse 60% 55% at 50% 35%, black 0%, transparent 100%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse 60% 55% at 50% 35%, black 0%, transparent 100%)",
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -z-10 top-0 left-1/2 -translate-x-1/2 w-[560px] h-[420px] rounded-full opacity-25 blur-3xl"
+        style={{ background: "var(--brand-gradient)" }}
+      />
 
       <motion.div variants={container} initial="hidden" animate="show">
         {/* Badge */}
