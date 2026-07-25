@@ -9,7 +9,6 @@ export default function ContactPage() {
     name: "",
     email: "",
     company: "",
-    country: "",
     message: "",
   });
 
@@ -151,29 +150,6 @@ export default function ContactPage() {
                     className="w-full border border-border rounded-lg px-3 py-2 text-sm bg-background focus:outline-none focus:ring-1 focus:ring-ring"
                     placeholder="Your company name"
                   />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium mb-1.5" htmlFor="country">
-                    Country
-                  </label>
-                  <select
-                    id="country"
-                    name="country"
-                    required
-                    value={form.country}
-                    onChange={handleChange}
-                    className="w-full border border-border rounded-lg px-3 py-2 text-sm bg-background focus:outline-none focus:ring-1 focus:ring-ring"
-                  >
-                    <option value="" disabled>
-                      Select your country
-                    </option>
-                    <option value="us">United States</option>
-                    <option value="ca">Canada</option>
-                    <option value="au">Australia</option>
-                    <option value="sg">Singapore</option>
-                    <option value="uk">United Kingdom</option>
-                  </select>
                 </div>
 
                 <div>
