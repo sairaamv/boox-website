@@ -1,0 +1,31 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Illustration of a payslip syncing with payroll software</title>
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1FBF8"/>
+      <stop offset="1" stop-color="#E3F4EF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg6)"/>
+  <rect x="360" y="140" width="260" height="340" rx="16" fill="#ffffff" stroke="#D4E0DD" stroke-width="2"/>
+  <rect x="392" y="172" width="140" height="16" rx="4" fill="#0D9488"/>
+  <g stroke="#D4E0DD" stroke-width="6" stroke-linecap="round">
+    <line x1="392" y1="220" x2="588" y2="220"/>
+    <line x1="392" y1="252" x2="540" y2="252"/>
+    <line x1="392" y1="320" x2="588" y2="320"/>
+    <line x1="392" y1="352" x2="500" y2="352"/>
+  </g>
+  <rect x="392" y="400" width="196" height="46" rx="8" fill="#F1FBF8"/>
+  <text x="410" y="429" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0D9488">Net Pay</text>
+  <rect x="580" y="140" width="260" height="340" rx="16" fill="#ffffff" stroke="#D4E0DD" stroke-width="2"/>
+  <rect x="612" y="172" width="140" height="16" rx="4" fill="#FF6B5C"/>
+  <g stroke="#D4E0DD" stroke-width="6" stroke-linecap="round">
+    <line x1="612" y1="220" x2="808" y2="220"/>
+    <line x1="612" y1="252" x2="760" y2="252"/>
+  </g>
+  <circle cx="712" cy="330" r="60" fill="none" stroke="#14B8A6" stroke-width="14"/>
+  <path d="M712 280 v-20 l-16 16" fill="none" stroke="#14B8A6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M712 380 v20 l16 -16" fill="none" stroke="#14B8A6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M600 300 q20 10 30 0" fill="none" stroke="#FF6B5C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M600 320 q20 10 30 0" fill="none" stroke="#FF8A7A" stroke-width="6" stroke-linecap="round"/>
+</svg>

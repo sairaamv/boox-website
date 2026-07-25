@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { articles } from "../data";
 import JsonLd from "@/components/json-ld";
@@ -77,6 +78,18 @@ export default function ArticlePage({ params }: Props) {
               {tag}
             </span>
           ))}
+        </div>
+
+        {/* Cover image */}
+        <div className="relative w-full aspect-[1200/630] rounded-lg overflow-hidden mb-8 bg-muted">
+          <Image
+            src={article.coverImage}
+            alt={article.coverImageAlt}
+            fill
+            priority
+            className="object-cover"
+            sizes="(min-width: 768px) 768px, 100vw"
+          />
         </div>
 
         {/* Title */}

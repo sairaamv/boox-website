@@ -1,0 +1,27 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Illustration of a Canadian tax filing document with a percentage symbol</title>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1FBF8"/>
+      <stop offset="1" stop-color="#E3F4EF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <rect x="440" y="90" width="320" height="440" rx="18" fill="#ffffff" stroke="#D4E0DD" stroke-width="2"/>
+  <rect x="470" y="130" width="180" height="18" rx="4" fill="#0D9488"/>
+  <g stroke="#D4E0DD" stroke-width="6" stroke-linecap="round">
+    <line x1="470" y1="180" x2="700" y2="180"/>
+    <line x1="470" y1="212" x2="660" y2="212"/>
+    <line x1="470" y1="244" x2="690" y2="244"/>
+  </g>
+  <circle cx="600" cy="360" r="72" fill="#0D9488"/>
+  <circle cx="574" cy="336" r="14" fill="#ffffff"/>
+  <circle cx="626" cy="384" r="14" fill="#ffffff"/>
+  <line x1="576" y1="386" x2="624" y2="334" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  <g stroke="#D4E0DD" stroke-width="6" stroke-linecap="round">
+    <line x1="470" y1="460" x2="640" y2="460"/>
+    <line x1="470" y1="492" x2="600" y2="492"/>
+  </g>
+  <path d="M900 160 l14 26 h-28z" fill="#FF6B5C"/>
+  <circle cx="330" cy="480" r="14" fill="#14B8A6" opacity="0.5"/>
+</svg>

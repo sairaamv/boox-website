@@ -5,6 +5,8 @@ export type Article = {
   publishedAt: string;
   readingMinutes: number;
   tags: string[];
+  coverImage: string;
+  coverImageAlt: string;
   content: string;
 };
 
@@ -17,6 +19,8 @@ export const articles: Article[] = [
     publishedAt: "2026-06-10",
     readingMinutes: 6,
     tags: ["bookkeeping", "month-end close", "small business"],
+    coverImage: "/blog/covers/month-end-close-checklist.svg",
+    coverImageAlt: "Checklist illustration representing the month-end close process",
     content: `
 <h2>Why Month-End Close Matters</h2>
 <p>The month-end close is the process of finalizing your financial records for a given month. Done well, it gives you accurate, up-to-date financial statements you can use to make decisions, prepare for tax season, and satisfy lenders or investors. Done poorly — or skipped — it leads to compounding errors that become painful and expensive to untangle at year-end.</p>
@@ -71,6 +75,8 @@ export const articles: Article[] = [
     publishedAt: "2026-06-17",
     readingMinutes: 7,
     tags: ["GST/HST", "Canada", "SaaS", "tax filing"],
+    coverImage: "/blog/covers/gst-hst-filing-guide-canadian-saas.svg",
+    coverImageAlt: "Illustration of a tax filing document with a percentage symbol",
     content: `
 <h2>Do Canadian SaaS Companies Need to Collect GST/HST?</h2>
 <p>Yes — once your total taxable revenues exceed $30,000 CAD over any four consecutive calendar quarters, you are required to register for a GST/HST account with the CRA. For most SaaS startups, this threshold arrives quickly. And even before you hit it, voluntary registration can be advantageous because it lets you claim Input Tax Credits (ITCs) on your business expenses.</p>
@@ -126,6 +132,8 @@ export const articles: Article[] = [
     publishedAt: "2026-06-24",
     readingMinutes: 6,
     tags: ["QuickBooks", "Xero", "accounting software", "small business"],
+    coverImage: "/blog/covers/quickbooks-vs-xero.svg",
+    coverImageAlt: "Illustration comparing two accounting software platforms side by side",
     content: `
 <h2>The Short Answer</h2>
 <p>Both QuickBooks and Xero are excellent accounting platforms. QuickBooks tends to have an edge for US businesses due to deeper IRS compliance features and broader accountant familiarity. Xero is often preferred in Australia and the UK, and has strong multi-currency support that makes it a good choice for businesses operating across borders.</p>
@@ -184,6 +192,8 @@ export const articles: Article[] = [
     publishedAt: "2026-07-01",
     readingMinutes: 7,
     tags: ["IRS", "audit", "US tax", "small business"],
+    coverImage: "/blog/covers/irs-audit-red-flags-small-business.svg",
+    coverImageAlt: "Illustration of a magnifying glass reviewing a financial document",
     content: `
 <h2>How Likely Is an IRS Audit?</h2>
 <p>The overall audit rate for individual returns is around 0.4%. For small businesses, particularly Schedule C filers and S-corps, the rate is higher — especially if your return contains certain patterns the IRS flags automatically. Understanding those patterns helps you avoid unnecessary scrutiny and keeps your books audit-ready.</p>
@@ -230,6 +240,8 @@ export const articles: Article[] = [
     publishedAt: "2026-07-08",
     readingMinutes: 6,
     tags: ["BAS", "Australia", "ATO", "sole trader", "GST"],
+    coverImage: "/blog/covers/bas-lodgement-guide-australia.svg",
+    coverImageAlt: "Illustration of a calendar marking a Business Activity Statement lodgement date",
     content: `
 <h2>What Is a BAS?</h2>
 <p>A Business Activity Statement (BAS) is a form submitted to the Australian Taxation Office (ATO) that reports your business's tax obligations for a given period. Most commonly, it covers:</p>
@@ -288,6 +300,8 @@ export const articles: Article[] = [
     publishedAt: "2026-07-15",
     readingMinutes: 7,
     tags: ["STP", "Single Touch Payroll", "Xero", "Australia", "payroll"],
+    coverImage: "/blog/covers/single-touch-payroll-xero-setup.svg",
+    coverImageAlt: "Illustration of a payslip syncing with payroll software",
     content: `
 <h2>What Is Single Touch Payroll?</h2>
 <p>Single Touch Payroll (STP) is an ATO reporting system that requires employers to report salary and wage information, PAYG withholding, and super information to the ATO every time they run payroll — in real time, directly from their payroll software. STP has been mandatory for all Australian employers since 2019 (Phase 1) and was upgraded to STP Phase 2 in 2022, which introduced more granular reporting including income types, disaggregated gross amounts, and child support deductions.</p>

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Illustration of a checklist representing a month-end close process</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1FBF8"/>
+      <stop offset="1" stop-color="#E3F4EF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="420" y="95" width="360" height="440" rx="20" fill="#ffffff" stroke="#D4E0DD" stroke-width="2"/>
+  <rect x="470" y="95" width="260" height="36" rx="10" fill="#0D9488"/>
+  <g stroke="#D4E0DD" stroke-width="2">
+    <line x1="460" y1="220" x2="740" y2="220"/>
+    <line x1="460" y1="280" x2="740" y2="280"/>
+    <line x1="460" y1="340" x2="740" y2="340"/>
+    <line x1="460" y1="400" x2="740" y2="400"/>
+    <line x1="460" y1="460" x2="740" y2="460"/>
+  </g>
+  <g>
+    <rect x="460" y="196" width="26" height="26" rx="6" fill="#14B8A6"/>
+    <path d="M467 209l5 5 10-11" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <rect x="460" y="256" width="26" height="26" rx="6" fill="#14B8A6"/>
+    <path d="M467 269l5 5 10-11" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <rect x="460" y="316" width="26" height="26" rx="6" fill="#14B8A6"/>
+    <path d="M467 329l5 5 10-11" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="460" y="376" width="26" height="26" rx="6" fill="none" stroke="#D4E0DD" stroke-width="2"/>
+  <rect x="460" y="436" width="26" height="26" rx="6" fill="none" stroke="#D4E0DD" stroke-width="2"/>
+  <line x1="510" y1="209" x2="700" y2="209" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="510" y1="269" x2="660" y2="269" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="510" y1="329" x2="690" y2="329" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="510" y1="389" x2="670" y2="389" stroke="#D4E0DD" stroke-width="6" stroke-linecap="round"/>
+  <line x1="510" y1="449" x2="640" y2="449" stroke="#D4E0DD" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="880" cy="150" r="10" fill="#FF6B5C"/>
+  <circle cx="300" cy="480" r="14" fill="#FF8A7A" opacity="0.6"/>
+</svg>
