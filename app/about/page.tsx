@@ -71,9 +71,10 @@ export default function AboutPage() {
               the judgment calls.
             </p>
             <p>
-              We serve businesses in the United States, Canada, and Australia —
-              each with their own tax authorities, compliance frameworks, and
-              accounting standards. We don&apos;t use a one-size-fits-all approach.
+              We serve businesses in the United States, Canada, Australia,
+              Singapore, and the UK — each with their own tax authorities,
+              compliance frameworks, and accounting standards. We don&apos;t use
+              a one-size-fits-all approach.
             </p>
           </div>
         </div>

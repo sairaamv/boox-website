@@ -22,7 +22,7 @@ const servicesSchema = {
         name: "Bookkeeping",
         serviceType: "Bookkeeping",
         description:
-          "Accurate daily reconciliations, transaction categorization, and monthly reporting for US, Canadian, and Australian businesses.",
+          "Accurate daily reconciliations, transaction categorization, and monthly reporting for businesses in the US, Canada, Australia, Singapore, and UK.",
         provider: { "@type": "Organization", name: "Books & Beyond" },
         areaServed: ["US", "CA", "AU", "SG", "GB"],
       },
@@ -35,7 +35,7 @@ const servicesSchema = {
         name: "Tax Filing",
         serviceType: "Tax Preparation",
         description:
-          "Federal, state, and corporate tax filing across IRS, CRA, and ATO jurisdictions.",
+          "Federal, state, and corporate tax filing across IRS, CRA, ATO, IRAS, and HMRC jurisdictions.",
         provider: { "@type": "Organization", name: "Books & Beyond" },
         areaServed: ["US", "CA", "AU", "SG", "GB"],
       },
@@ -48,7 +48,7 @@ const servicesSchema = {
         name: "Payroll",
         serviceType: "Payroll Services",
         description:
-          "End-to-end payroll processing compliant with W-2, T4, and STP requirements.",
+          "End-to-end payroll processing compliant with W-2, T4, STP, PAYE, and CPF requirements.",
         provider: { "@type": "Organization", name: "Books & Beyond" },
         areaServed: ["US", "CA", "AU", "SG", "GB"],
       },
@@ -61,7 +61,7 @@ const servicesSchema = {
         name: "Audit Support",
         serviceType: "Audit Support",
         description:
-          "Audit-ready workpapers and IRS/CRA/ATO audit response support.",
+          "Audit-ready workpapers and IRS/CRA/ATO/IRAS/HMRC audit response support.",
         provider: { "@type": "Organization", name: "Books & Beyond" },
         areaServed: ["US", "CA", "AU", "SG", "GB"],
       },

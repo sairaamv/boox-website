@@ -4,7 +4,7 @@ import JsonLd from "@/components/json-ld";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Transparent bookkeeping, tax, and payroll plans for US, Canadian, and Australian businesses. Contact us for current pricing.",
+    "Transparent bookkeeping, tax, and payroll plans for businesses in the US, Canada, Australia, Singapore, and UK. Contact us for current pricing.",
   alternates: { canonical: "https://booksnb.com/pricing" },
 };
 
@@ -49,7 +49,7 @@ const faqSchema = {
       name: "What currencies are your plans available in?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Plans are available in USD, CAD, and AUD. Contact us for current pricing in your currency.",
+        text: "Plans are available in USD, CAD, AUD, SGD, and GBP. Contact us for current pricing in your currency.",
       },
     },
   ],

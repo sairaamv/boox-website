@@ -95,7 +95,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border mt-8 pt-6 text-xs text-muted-foreground">
-          © 2025 Books & Beyond (booksnb.com). All rights reserved.
+          © 2026 Books & Beyond (booksnb.com). All rights reserved.
         </div>
       </div>
     </footer>

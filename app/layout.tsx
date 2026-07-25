@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Books & Beyond — Virtual Accounting & Auditing",
     description:
-      "Expert accountants backed by proven processes for US, Canadian, and Australian businesses.",
+      "Expert accountants backed by proven processes for businesses in the US, Canada, Australia, Singapore, and UK.",
     url: "https://booksnb.com",
     siteName: "Books & Beyond",
     type: "website",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Books & Beyond — Virtual Accounting & Auditing",
     description:
-      "Expert accountants backed by proven processes for US, Canadian, and Australian businesses.",
+      "Expert accountants backed by proven processes for businesses in the US, Canada, Australia, Singapore, and UK.",
     images: ["/og-image.png"],
   },
   icons: {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       { url: "/favicon.ico", sizes: "any" },
       { url: "/booksnb-icon.svg", type: "image/svg+xml" },
     ],
-    apple: "/booksnb-icon.svg",
+    apple: "/apple-icon.png",
   },
 };
 
