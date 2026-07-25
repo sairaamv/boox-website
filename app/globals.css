@@ -1,6 +1,3 @@
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,8 +25,8 @@
   --ring:             #0D9488;
 
   /* Typography */
-  --bnb-font-display: 'Satoshi', system-ui, -apple-system, sans-serif;
-  --bnb-font-labels:  'Space Grotesk', ui-sans-serif, sans-serif;
+  --bnb-font-display: var(--font-satoshi), system-ui, -apple-system, sans-serif;
+  --bnb-font-labels:  var(--font-space-grotesk), ui-sans-serif, sans-serif;
 }
 
 body {
