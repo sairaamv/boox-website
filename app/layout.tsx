@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | Books & Beyond",
   },
   description:
-    "Expert accountants backed by proven processes. Faster closes, cleaner books, audit-ready output. Serving businesses in the US, Canada, Australia, Singapore, and UK.",
+    "CPA-led bookkeeping backed by proven processes. Faster closes, cleaner books, audit-ready output. Serving businesses in the US, Canada, Australia, Singapore, and UK.",
   metadataBase: new URL("https://booksnb.com"),
   alternates: {
     canonical: "/",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Books & Beyond — Virtual Accounting & Auditing",
     description:
-      "Expert accountants backed by proven processes for businesses in the US, Canada, Australia, Singapore, and UK.",
+      "CPA-led bookkeeping backed by proven processes for businesses in the US, Canada, Australia, Singapore, and UK.",
     url: "https://booksnb.com",
     siteName: "Books & Beyond",
     type: "website",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Books & Beyond — Virtual Accounting & Auditing",
     description:
-      "Expert accountants backed by proven processes for businesses in the US, Canada, Australia, Singapore, and UK.",
+      "CPA-led bookkeeping backed by proven processes for businesses in the US, Canada, Australia, Singapore, and UK.",
     images: ["/og-image.png"],
   },
   icons: {
@@ -75,7 +75,7 @@ const organizationSchema = {
   url: "https://booksnb.com",
   logo: "https://booksnb.com/booksnb-icon.svg",
   description:
-    "Virtual accounting and auditing firm serving businesses in the US, Canada, Australia, Singapore, and UK.",
+    "CPA-led virtual accounting and auditing firm serving businesses in the US, Canada, Australia, Singapore, and UK.",
   email: "hello@booksnb.com",
   areaServed: ["US", "CA", "AU", "SG", "GB"],
   contactPoint: {

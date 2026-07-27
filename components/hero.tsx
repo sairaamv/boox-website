@@ -129,7 +129,7 @@ export default function Hero() {
           variants={item}
           className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          A dedicated virtual accounting team that closes on time, every
+          CPA-led bookkeeping that closes on time, every
           time — across the US, Canada, Australia, Singapore, and UK.
         </motion.p>
 
@@ -151,7 +151,7 @@ export default function Hero() {
           variants={item}
           className="flex flex-col sm:flex-row gap-3 justify-center mb-16"
         >
-          {["IRS-Compliant", "CRA-Certified", "ATO-Registered", "IRAS-Compliant", "HMRC-Registered"].map((b) => (
+          {["CPA-Led", "IRS-Compliant", "CRA-Certified", "ATO-Registered", "IRAS-Compliant", "HMRC-Registered"].map((b) => (
             <span
               key={b}
               className="text-xs font-mono border border-border rounded-lg px-4 py-2 text-muted-foreground bg-card/80"

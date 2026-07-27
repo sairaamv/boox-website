@@ -4,7 +4,7 @@ import { Check, ArrowLeftRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Books & Beyond — built by accountants, driven by process. 20+ credentialed professionals across the US, Canada, Australia, Singapore, and UK.",
+    "Books & Beyond — CPA-led bookkeeping, driven by process. 20+ credentialed professionals across the US, Canada, Australia, Singapore, and UK.",
   alternates: { canonical: "https://booksnb.com/about" },
 };
 
@@ -45,12 +45,12 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-5">
-          Built by accountants. Driven by process.
+          CPA-led bookkeeping. Driven by process.
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Books & Beyond started with a simple belief: small businesses deserve the same
-          quality of accounting that large enterprises have access to — without
-          the enterprise price tag.
+          Books & Beyond is led by a licensed CPA, built on the belief that small
+          businesses deserve the same quality of accounting that large enterprises
+          have access to — without the enterprise price tag.
         </p>
       </section>
 
@@ -60,12 +60,12 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold mb-6">Our story</h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              Books & Beyond started with a simple belief: small businesses deserve the same
-              quality of accounting that large enterprises have access to — without
-              the enterprise price tag.
+              Books & Beyond is led by a licensed CPA, built on a simple belief: small
+              businesses deserve the same quality of accounting that large enterprises
+              have access to — without the enterprise price tag.
             </p>
             <p>
-              We combine experienced accountants with streamlined processes to
+              Every engagement runs under CPA oversight. We combine experienced accountants with streamlined processes to
               deliver faster month-end closes, cleaner books, and audit-ready
               output. The process handles the repetitive work. The accountants handle
               the judgment calls.
@@ -142,7 +142,7 @@ export default function AboutPage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <h2 className="text-2xl font-bold mb-4 text-center">The team</h2>
         <p className="text-muted-foreground text-center mb-10 max-w-xl mx-auto">
-          A distributed team of credentialed accountants — CPAs, CAs, CPAs (AU), and chartered accountants (SG/UK) — embedded across the US, Canada, Australia, Singapore, and UK. Every client has a named accountant who knows their books.
+          Led by a licensed CPA and backed by a distributed team of credentialed accountants — CPAs, CAs, CPAs (AU), and chartered accountants (SG/UK) — embedded across the US, Canada, Australia, Singapore, and UK. Every client has a named accountant who knows their books.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
           {[
