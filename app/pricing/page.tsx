@@ -6,9 +6,9 @@ const tiers = [
     name: "Starter",
     desc: "For small businesses getting their books in order.",
     features: [
-      "Up to 200 transactions/month",
+      "Bookkeeping Agent — up to 200 transactions/month",
       "Monthly bookkeeping",
-      "Tax filing (1 return/yr)",
+      "Tax Agent (1 return/yr)",
       "Email support",
       "QuickBooks or Xero integration",
     ],
@@ -21,8 +21,8 @@ const tiers = [
     desc: "For growing businesses that need more support.",
     features: [
       "Everything in Starter",
-      "Up to 500 transactions/month",
-      "Payroll (up to 10 employees)",
+      "Bookkeeping Agent — up to 500 transactions/month",
+      "Payroll Agent (up to 10 employees)",
       "Quarterly reporting",
       "Dedicated accountant",
       "Priority support",
@@ -38,8 +38,8 @@ const tiers = [
     features: [
       "Everything in Growth",
       "Unlimited transactions",
-      "CFO advisory",
-      "Audit support",
+      "CFO Agent + advisory",
+      "Audit Agent + support",
       "SLA guarantee",
       "Custom reporting",
       "Multi-entity support",
@@ -76,7 +76,7 @@ export default function PricingPage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Pricing</h1>
         <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-8">
-          Plans built around your business — get a quote in one call.
+          Every plan runs on AI Agents and a dedicated accountant. Get a quote in one call.
         </p>
       </section>
 

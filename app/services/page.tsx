@@ -94,8 +94,8 @@ const breadcrumbSchema = {
 const services = [
   {
     Icon: BookOpen,
-    title: "Bookkeeping",
-    desc: "Accurate books are the foundation of everything else. We handle daily reconciliations, transaction categorization, and monthly reporting so your financials are always current and correct.",
+    title: "Bookkeeping Agent",
+    desc: "Accurate books are the foundation of everything else. Our AI Agent handles daily reconciliations, transaction categorization, and monthly reporting — reviewed by a CPA — so your financials are always current and correct.",
     features: [
       "Daily transaction categorization and reconciliation",
       "Monthly P&L statement and balance sheet",
@@ -107,8 +107,8 @@ const services = [
   },
   {
     Icon: FileText,
-    title: "Tax Filing",
-    desc: "We handle the full cycle of tax compliance — corporate returns, indirect taxes, and annual filings — across all three jurisdictions we serve.",
+    title: "Tax Agent",
+    desc: "Our AI Agent tracks deadlines and prepares the full cycle of tax compliance — corporate returns, indirect taxes, and annual filings — filed by a CPA who knows the local rules.",
     features: [
       "US: Federal + state income tax, 1099 filing, sales tax nexus",
       "CA: GST/HST filing, T2 corporate returns, CRA compliance",
@@ -120,8 +120,8 @@ const services = [
   },
   {
     Icon: Users,
-    title: "Payroll",
-    desc: "End-to-end payroll processing with full compliance for each country's requirements — from payslips to year-end reporting.",
+    title: "Payroll Agent",
+    desc: "End-to-end payroll processing with full compliance for each country's requirements — from payslips to year-end reporting, run by the agent and signed off by your accountant.",
     features: [
       "US: W-2s, quarterly filings, multi-state payroll",
       "CA: T4s, ROEs, payroll remittances",
@@ -133,8 +133,8 @@ const services = [
   },
   {
     Icon: Search,
-    title: "Audit Support",
-    desc: "Whether you're preparing for a statutory audit or responding to a tax authority, we produce audit-ready workpapers and documentation that stand up to scrutiny.",
+    title: "Audit Agent",
+    desc: "Whether you're preparing for a statutory audit or responding to a tax authority, our AI Agent builds audit-ready workpapers and flags control gaps before your auditor finds them.",
     features: [
       "Audit-ready workpaper preparation",
       "Internal control documentation",
@@ -146,8 +146,8 @@ const services = [
   },
   {
     Icon: BarChart2,
-    title: "CFO Advisory",
-    desc: "For businesses that need more than compliance — strategic financial insight, management reporting, and planning support at a fraction of the cost of a full-time CFO.",
+    title: "CFO Agent",
+    desc: "For businesses that need more than compliance — the agent turns your live books into forecasts and board decks, reviewed by a CFO-grade accountant, at a fraction of the cost of a full-time hire.",
     features: [
       "Monthly management reporting packages",
       "Cash flow forecasting and modelling",
@@ -166,10 +166,10 @@ export default function ServicesPage() {
       <JsonLd schema={breadcrumbSchema} />
       {/* Header */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Our Services</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Five AI Agents. One accountant who owns the outcome.</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Books & Beyond offers end-to-end accounting, tax, and advisory —
-          delivered by expert humans through proven workflows.
+          run by AI Agents, reviewed by credentialed CPAs.
         </p>
       </section>
 
@@ -200,7 +200,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-brand-forest text-white py-16">
+      <section className="bg-ink text-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Not sure what you need?</h2>
           <p className="text-white/80 mb-8">
@@ -209,13 +209,13 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="/contact"
-              className="inline-block bg-white text-brand-forest font-medium px-8 py-3 rounded-lg hover:bg-muted transition-colors"
+              className="inline-block bg-brand-forest-light text-ink font-medium px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
             >
               Book a Call
             </a>
             <a
               href="/pricing"
-              className="inline-block border border-white text-white font-medium px-8 py-3 rounded-lg hover:bg-brand-forest-light transition-colors"
+              className="inline-block border border-white/30 text-white font-medium px-8 py-3 rounded-lg hover:bg-white/10 transition-colors"
             >
               View Pricing
             </a>

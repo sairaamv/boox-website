@@ -97,14 +97,14 @@ export default function SGPage() {
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <div className="inline-flex text-xs font-mono border border-border rounded-lg px-3 py-1.5 text-muted-foreground mb-6">
-          IRAS-compliant, ACRA-ready
+          AI Agent + IRAS-compliant
         </div>
         <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-5 max-w-2xl">
           IRAS-Compliant Accounting for Singapore Businesses
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl mb-8">
           GST filing, CPF payroll, corporate tax, and ACRA annual returns —
-          we keep your Singapore books clean and compliant.
+          run by an AI Agent, reviewed by an accountant who keeps you compliant.
         </p>
         <CtaButton href="/contact" variant="primary">
           Book a Call
@@ -173,7 +173,7 @@ export default function SGPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-brand-forest text-white py-16">
+      <section className="bg-ink text-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Let&apos;s sort your Singapore books.</h2>
           <p className="text-white/80 mb-8">
@@ -181,7 +181,7 @@ export default function SGPage() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-white text-brand-forest font-medium px-8 py-3 rounded-lg hover:bg-muted transition-colors"
+            className="inline-block bg-brand-forest-light text-ink font-medium px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
           >
             Book a Call
           </a>

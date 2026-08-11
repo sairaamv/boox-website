@@ -16,6 +16,8 @@ const config: Config = {
         "brand-forest-deep":  "var(--brand-forest-deep)",
         "bnb-coral":          "var(--bnb-coral)",
         "bnb-coral-soft":     "var(--bnb-coral-soft)",
+        "bnb-coral-wash":     "var(--bnb-coral-wash)",
+        ink:                  "var(--ink)",
         muted: {
           DEFAULT:    "var(--muted)",
           foreground: "var(--muted-foreground)",

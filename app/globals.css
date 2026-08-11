@@ -15,6 +15,7 @@
   /* Coral spark */
   --bnb-coral:      #FF6B5C;       /* the "&", the smile, sparing accents */
   --bnb-coral-soft: #FF8A7A;       /* coral on dark backgrounds */
+  --bnb-coral-wash: #FCEEEC;       /* coral tint for negative deltas on light cards */
 
   /* Surfaces & neutrals */
   --muted:            #F1FBF8;     /* light teal wash */
@@ -23,6 +24,9 @@
   --card:             #ffffff;
   --destructive:      #c0392b;
   --ring:             #0D9488;
+
+  /* Dark surface — hero + closing CTA only, nowhere else */
+  --ink: #0B1F1C;
 
   /* Typography */
   --bnb-font-display: var(--font-satoshi), system-ui, -apple-system, sans-serif;

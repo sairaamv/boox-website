@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -19,7 +20,7 @@ const countryLinks = [
   { href: "/uk", label: "UK" },
 ];
 
-function BooksnbLogo() {
+function BooksnbLogo({ light }: { light: boolean }) {
   return (
     <Link href="/" className="flex items-center gap-3 no-underline">
       <svg viewBox="0 0 110 104" width="40" height="38" fill="none" aria-hidden="true" className="shrink-0">
@@ -29,7 +30,7 @@ function BooksnbLogo() {
         <path d="M45 25 C49 31 61 31 65 25" stroke="#FF6B5C" strokeWidth="6" strokeLinecap="round" />
       </svg>
       <span
-        className="font-bold text-xl text-foreground"
+        className={`font-bold text-xl transition-colors duration-300 ${light ? "text-white" : "text-foreground"}`}
         style={{ fontWeight: 900, letterSpacing: "-0.04em" }}
       >
         books <span style={{ color: "var(--bnb-coral)" }}>&amp;</span> beyond
@@ -40,11 +41,32 @@ function BooksnbLogo() {
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+
+  // Only the homepage opens on a dark hero — every other page starts light.
+  const overDarkHero = pathname === "/";
+
+  useEffect(() => {
+    if (!overDarkHero) return;
+    const onScroll = () => setScrolled(window.scrollY > 64);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [overDarkHero]);
+
+  const transparent = overDarkHero && !scrolled;
 
   return (
-    <header className="sticky top-0 z-50 bg-background border-b border-border">
+    <header
+      className={`fixed top-0 inset-x-0 z-50 border-b transition-colors duration-300 ${
+        transparent
+          ? "bg-transparent border-transparent"
+          : "bg-background/90 backdrop-blur-md border-border"
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-        <BooksnbLogo />
+        <BooksnbLogo light={transparent} />
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
@@ -52,7 +74,11 @@ export default function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className={`text-sm font-medium transition-colors duration-300 ${
+                transparent
+                  ? "text-white/70 hover:text-white"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
             >
               {l.label}
             </Link>
@@ -61,13 +87,25 @@ export default function Nav() {
 
         {/* Country switcher + CTA */}
         <div className="hidden md:flex items-center gap-3">
-          <div className="flex items-center gap-1 border border-border rounded-lg px-2 py-1">
+          <div
+            className={`flex items-center gap-1 rounded-lg px-2 py-1 border transition-colors duration-300 ${
+              transparent ? "border-white/20" : "border-border"
+            }`}
+          >
             {countryLinks.map((c, i) => (
               <span key={c.href} className="flex items-center">
-                {i > 0 && <span className="text-border mx-1">|</span>}
+                {i > 0 && (
+                  <span className={transparent ? "text-white/20 mx-1" : "text-border mx-1"}>
+                    |
+                  </span>
+                )}
                 <Link
                   href={c.href}
-                  className="text-xs font-mono font-medium text-muted-foreground hover:text-brand-forest transition-colors px-1"
+                  className={`text-xs font-mono font-medium transition-colors duration-300 px-1 ${
+                    transparent
+                      ? "text-white/70 hover:text-brand-forest-light"
+                      : "text-muted-foreground hover:text-brand-forest"
+                  }`}
                 >
                   {c.label}
                 </Link>
@@ -85,13 +123,15 @@ export default function Nav() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
+          className={`md:hidden p-2 rounded-lg transition-colors duration-300 ${
+            transparent ? "hover:bg-white/10" : "hover:bg-muted"
+          }`}
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
-          <div className="w-5 h-0.5 bg-foreground mb-1" />
-          <div className="w-5 h-0.5 bg-foreground mb-1" />
-          <div className="w-5 h-0.5 bg-foreground" />
+          <div className={`w-5 h-0.5 mb-1 transition-colors duration-300 ${transparent ? "bg-white" : "bg-foreground"}`} />
+          <div className={`w-5 h-0.5 mb-1 transition-colors duration-300 ${transparent ? "bg-white" : "bg-foreground"}`} />
+          <div className={`w-5 h-0.5 transition-colors duration-300 ${transparent ? "bg-white" : "bg-foreground"}`} />
         </button>
       </div>
 
