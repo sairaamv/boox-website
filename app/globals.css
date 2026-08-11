@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #111827;           /* headings, prices, key values */
+  --background: #0B1F1C;           /* one background color, site-wide */
+  --foreground: #EAF5F1;           /* headings, prices, key values */
 
   /* Brand teal */
   --brand-forest:       #0D9488;   /* primary — links, buttons, left ledger page */
@@ -15,17 +15,16 @@
   /* Coral spark */
   --bnb-coral:      #FF6B5C;       /* the "&", the smile, sparing accents */
   --bnb-coral-soft: #FF8A7A;       /* coral on dark backgrounds */
-  --bnb-coral-wash: #FCEEEC;       /* coral tint for negative deltas on light cards */
 
   /* Surfaces & neutrals */
-  --muted:            #F1FBF8;     /* light teal wash */
-  --muted-foreground: #374151;     /* body copy, nav links, descriptions */
-  --border:           #D4E0DD;     /* card borders */
-  --card:             #ffffff;
-  --destructive:      #c0392b;
-  --ring:             #0D9488;
+  --muted:            #142A22;     /* subtle raised wash — hover states, pills */
+  --muted-foreground: #9FB8AE;     /* body copy, nav links, descriptions */
+  --border:           #24413A;     /* card borders */
+  --card:             #102420;     /* slightly raised card surface */
+  --destructive:      #E5484D;
+  --ring:             #14B8A6;
 
-  /* Dark surface — hero + closing CTA only, nowhere else */
+  /* Darkest anchor — hero + closing CTA glow, matches background */
   --ink: #0B1F1C;
 
   /* Typography */
@@ -44,4 +43,3 @@ body {
     text-wrap: balance;
   }
 }
-

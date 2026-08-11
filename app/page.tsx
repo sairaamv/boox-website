@@ -292,7 +292,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA banner */}
-      <section className="bg-ink text-white py-20">
+      <section className="bg-card border-y border-border text-white py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Put an AI Agent on your books today.

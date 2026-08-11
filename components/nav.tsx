@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const navLinks = [
@@ -42,27 +41,24 @@ function BooksnbLogo({ light }: { light: boolean }) {
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const pathname = usePathname();
 
-  // Only the homepage opens on a dark hero — every other page starts light.
-  const overDarkHero = pathname === "/";
-
+  // Every page sits on the same dark background now, so the nav floats
+  // transparent over it everywhere and only picks up an elevated surface on scroll.
   useEffect(() => {
-    if (!overDarkHero) return;
     const onScroll = () => setScrolled(window.scrollY > 64);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [overDarkHero]);
+  }, []);
 
-  const transparent = overDarkHero && !scrolled;
+  const transparent = !scrolled;
 
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 border-b transition-colors duration-300 ${
         transparent
           ? "bg-transparent border-transparent"
-          : "bg-background/90 backdrop-blur-md border-border"
+          : "bg-card/90 backdrop-blur-md border-border"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
@@ -137,7 +133,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-background border-b border-border px-4 pb-4">
+        <div className="md:hidden bg-card border-b border-border px-4 pb-4">
           <nav className="flex flex-col gap-3 pt-3">
             {navLinks.map((l) => (
               <Link

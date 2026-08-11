@@ -10,7 +10,7 @@ export function PnlMockCard() {
         <span className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
           P&amp;L — closed
         </span>
-        <span className="text-xs font-mono text-brand-forest bg-muted rounded-full px-2 py-0.5">
+        <span className="text-xs font-mono text-brand-forest-light bg-brand-forest/15 rounded-full px-2 py-0.5">
           on time
         </span>
       </div>
@@ -22,7 +22,7 @@ export function PnlMockCard() {
               <span className="text-sm font-semibold text-foreground font-mono">{r.value}</span>
               <span
                 className={`text-xs font-mono px-1.5 py-0.5 rounded ${
-                  r.up ? "text-brand-forest bg-muted" : "text-bnb-coral bg-bnb-coral-wash"
+                  r.up ? "text-brand-forest-light bg-brand-forest/15" : "text-bnb-coral-soft bg-bnb-coral/15"
                 }`}
               >
                 {r.delta}

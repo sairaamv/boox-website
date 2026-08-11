@@ -168,7 +168,7 @@ export default function CAPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-ink text-white py-16">
+      <section className="bg-card border-y border-border text-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Let&apos;s sort your Canadian books.</h2>
           <p className="text-white/80 mb-8">
