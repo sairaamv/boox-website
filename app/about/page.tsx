@@ -55,7 +55,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story */}
-      <section className="bg-muted border-y border-border py-16">
+      <section className="border-y border-border py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold mb-6">Our story</h2>
           <div className="space-y-4 text-muted-foreground">
@@ -124,7 +124,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="bg-muted border-y border-border py-16">
+      <section className="border-y border-border py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold mb-10 text-center">What we stand for</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

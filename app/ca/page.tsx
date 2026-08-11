@@ -107,7 +107,7 @@ export default function CAPage() {
       </section>
 
       {/* Services */}
-      <section className="bg-muted border-y border-border py-16">
+      <section className="border-y border-border py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold mb-10">Services for Canadian businesses</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

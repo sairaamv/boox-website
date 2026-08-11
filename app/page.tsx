@@ -90,7 +90,7 @@ export default function HomePage() {
       <Hero />
 
       {/* AI Agents strip */}
-      <section className="bg-muted border-y border-border py-16">
+      <section className="border-y border-border py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <span className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-wider text-brand-forest bg-card border border-border rounded-full px-3 py-1 mb-4">
@@ -152,7 +152,7 @@ export default function HomePage() {
       </section>
 
       {/* Alternating: Tax Agent */}
-      <section className="bg-muted border-y border-border">
+      <section className="border-y border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
             <FilingMockCard />
@@ -212,7 +212,7 @@ export default function HomePage() {
       </section>
 
       {/* Agents + Humans */}
-      <section className="bg-muted border-y border-border py-20">
+      <section className="border-y border-border py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-3">
@@ -276,7 +276,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-muted border-y border-border max-w-full">
+      <section className="border-y border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
           <h2 className="text-2xl font-bold text-center mb-10">What our clients say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
