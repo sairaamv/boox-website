@@ -1,45 +1,9 @@
 import Link from "next/link";
-import {
-  BookOpen,
-  FileText,
-  Users,
-  Search,
-  BarChart2,
-  Check,
-  MapPin,
-  Sparkles,
-} from "lucide-react";
-import CtaButton from "@/components/cta-button";
+import { Check, MapPin, Sparkles, ArrowRight } from "lucide-react";
 import Hero from "@/components/hero";
 import { PnlMockCard, FilingMockCard, CashflowMockCard } from "@/components/mock-cards";
-
-const agents = [
-  {
-    Icon: BookOpen,
-    title: "Bookkeeping Agent",
-    desc: "Categorizes every transaction and reconciles your accounts daily — no month-end surprise.",
-  },
-  {
-    Icon: FileText,
-    title: "Tax Agent",
-    desc: "Tracks deadlines and prepares filings for the US, Canada, Australia, Singapore, and UK.",
-  },
-  {
-    Icon: Users,
-    title: "Payroll Agent",
-    desc: "Runs payroll and compliance filings end-to-end, in every jurisdiction you operate.",
-  },
-  {
-    Icon: Search,
-    title: "Audit Agent",
-    desc: "Builds audit-ready workpapers and flags control gaps before your auditor finds them.",
-  },
-  {
-    Icon: BarChart2,
-    title: "CFO Agent",
-    desc: "Turns your data into cash-flow forecasts and board decks — updated automatically.",
-  },
-];
+import TabbedShowcase from "@/components/tabbed-showcase";
+import StageTabs from "@/components/stage-tabs";
 
 const agentPoints = [
   "Reconciles transactions and flags anomalies in real time",
@@ -89,36 +53,20 @@ export default function HomePage() {
     <>
       <Hero />
 
-      {/* AI Agents strip */}
+      {/* AI Agents / Services / Team tabs */}
       <section className="border-y border-border py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <span className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-wider text-brand-forest bg-card border border-border rounded-full px-3 py-1 mb-4">
               <Sparkles className="h-3 w-3" />
-              AI Agents
+              One platform, three ways to see it
             </span>
             <h2 className="text-3xl font-bold">One team. Five AI Agents. Zero excuses.</h2>
             <p className="text-muted-foreground mt-2">
               Every agent works under a credentialed accountant — always reviewed, never a black box.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {agents.map(({ Icon, title, desc }) => (
-              <div
-                key={title}
-                className="bg-card border border-border rounded-lg p-6 shadow-sm"
-              >
-                <Icon className="h-6 w-6 text-brand-forest mb-3" />
-                <h3 className="font-semibold text-foreground mb-1">{title}</h3>
-                <p className="text-sm text-muted-foreground">{desc}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <CtaButton href="/services" variant="secondary">
-              See every agent
-            </CtaButton>
-          </div>
+          <TabbedShowcase />
         </div>
       </section>
 
@@ -144,9 +92,12 @@ export default function HomePage() {
               )
             )}
           </ul>
-          <CtaButton href="/services" variant="secondary">
-            See the Bookkeeping Agent
-          </CtaButton>
+          <Link
+            href="/services#bookkeeping-agent"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-brand-forest-light hover:text-brand-forest transition-colors"
+          >
+            See more <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
         </div>
         <PnlMockCard />
       </section>
@@ -175,9 +126,12 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
-            <CtaButton href="/services" variant="secondary">
-              See the Tax Agent
-            </CtaButton>
+            <Link
+              href="/services#tax-agent"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-brand-forest-light hover:text-brand-forest transition-colors"
+            >
+              See more <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
           </div>
         </div>
       </section>
@@ -204,11 +158,28 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-          <CtaButton href="/services" variant="secondary">
-            See the CFO Agent
-          </CtaButton>
+          <Link
+            href="/services#cfo-agent"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-brand-forest-light hover:text-brand-forest transition-colors"
+          >
+            See more <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
         </div>
         <CashflowMockCard />
+      </section>
+
+      {/* Built for every stage */}
+      <section className="border-y border-border py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-3">Built for every stage.</h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Same AI Agents from day one. What changes is how much human
+              advisory you need on top.
+            </p>
+          </div>
+          <StageTabs />
+        </div>
       </section>
 
       {/* Agents + Humans */}

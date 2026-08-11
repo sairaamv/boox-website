@@ -95,6 +95,7 @@ const services = [
   {
     Icon: BookOpen,
     title: "Bookkeeping Agent",
+    slug: "bookkeeping-agent",
     desc: "Accurate books are the foundation of everything else. Our AI Agent handles daily reconciliations, transaction categorization, and monthly reporting — reviewed by a CPA — so your financials are always current and correct.",
     features: [
       "Daily transaction categorization and reconciliation",
@@ -108,6 +109,7 @@ const services = [
   {
     Icon: FileText,
     title: "Tax Agent",
+    slug: "tax-agent",
     desc: "Our AI Agent tracks deadlines and prepares the full cycle of tax compliance — corporate returns, indirect taxes, and annual filings — filed by a CPA who knows the local rules.",
     features: [
       "US: Federal + state income tax, 1099 filing, sales tax nexus",
@@ -121,6 +123,7 @@ const services = [
   {
     Icon: Users,
     title: "Payroll Agent",
+    slug: "payroll-agent",
     desc: "End-to-end payroll processing with full compliance for each country's requirements — from payslips to year-end reporting, run by the agent and signed off by your accountant.",
     features: [
       "US: W-2s, quarterly filings, multi-state payroll",
@@ -134,6 +137,7 @@ const services = [
   {
     Icon: Search,
     title: "Audit Agent",
+    slug: "audit-agent",
     desc: "Whether you're preparing for a statutory audit or responding to a tax authority, our AI Agent builds audit-ready workpapers and flags control gaps before your auditor finds them.",
     features: [
       "Audit-ready workpaper preparation",
@@ -147,6 +151,7 @@ const services = [
   {
     Icon: BarChart2,
     title: "CFO Agent",
+    slug: "cfo-agent",
     desc: "For businesses that need more than compliance — the agent turns your live books into forecasts and board decks, reviewed by a CFO-grade accountant, at a fraction of the cost of a full-time hire.",
     features: [
       "Monthly management reporting packages",
@@ -175,8 +180,8 @@ export default function ServicesPage() {
 
       {/* Services list */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 space-y-8">
-        {services.map(({ Icon, title, desc, features, compliance }) => (
-          <div key={title} className="bg-card border border-border rounded-lg p-8 shadow-sm">
+        {services.map(({ Icon, title, slug, desc, features, compliance }) => (
+          <div key={title} id={slug} className="bg-card border border-border rounded-lg p-8 shadow-sm scroll-mt-24">
             <div className="flex items-start gap-4 mb-4">
               <Icon className="h-6 w-6 text-brand-forest shrink-0 mt-1" />
               <div>
@@ -211,7 +216,7 @@ export default function ServicesPage() {
               href="/contact"
               className="inline-block bg-brand-forest-light text-ink font-medium px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
             >
-              Book a Call
+              Schedule Demo
             </a>
             <a
               href="/pricing"

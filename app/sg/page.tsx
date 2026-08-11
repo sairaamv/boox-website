@@ -107,7 +107,7 @@ export default function SGPage() {
           run by an AI Agent, reviewed by an accountant who keeps you compliant.
         </p>
         <CtaButton href="/contact" variant="primary">
-          Book a Call
+          Schedule Demo
         </CtaButton>
       </section>
 
@@ -183,7 +183,7 @@ export default function SGPage() {
             href="/contact"
             className="inline-block bg-brand-forest-light text-ink font-medium px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
           >
-            Book a Call
+            Schedule Demo
           </a>
         </div>
       </section>

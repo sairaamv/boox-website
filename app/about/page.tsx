@@ -169,7 +169,7 @@ export default function AboutPage() {
             href="/contact"
             className="inline-block bg-brand-forest-light text-ink font-medium px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
           >
-            Book a Call
+            Schedule Demo
           </a>
         </div>
       </section>
