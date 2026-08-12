@@ -118,19 +118,48 @@ const products = [
   },
 ] as const;
 
-function fmt(n: number) {
-  return `$${n.toLocaleString()}`;
+const COUNTRIES = [
+  { code: "US", currency: "USD", symbol: "$", rate: 1 },
+  { code: "CA", currency: "CAD", symbol: "$", rate: 1.35 },
+  { code: "AU", currency: "AUD", symbol: "$", rate: 1.53 },
+  { code: "SG", currency: "SGD", symbol: "$", rate: 1.29 },
+  { code: "UK", currency: "GBP", symbol: "£", rate: 0.77 },
+] as const;
+
+type Country = (typeof COUNTRIES)[number];
+
+function fmt(n: number, country: Country) {
+  const converted = Math.round(n * country.rate);
+  const amount = `${country.symbol}${converted.toLocaleString()}`;
+  return country.code === "US" ? amount : `${amount} ${country.currency}`;
 }
 
 export default function PricingTabs() {
   const [active, setActive] = useState<string>(products[0].key);
   const [annual, setAnnual] = useState(true);
+  const [country, setCountry] = useState<Country>(COUNTRIES[0]);
 
   const product = products.find((p) => p.key === active) ?? products[0];
   const single = product.tiers.length === 1;
 
   return (
     <div>
+      <div className="flex flex-wrap justify-center gap-1 mb-6 border border-border rounded-lg p-1 w-fit mx-auto">
+        {COUNTRIES.map((c) => (
+          <button
+            key={c.code}
+            onClick={() => setCountry(c)}
+            className={`text-xs font-mono px-3 py-1.5 rounded-md transition-colors ${
+              country.code === c.code
+                ? "bg-brand-forest text-white"
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            {c.code}
+          </button>
+        ))}
+      </div>
+
       <div className="flex flex-wrap justify-center gap-2 mb-4">
         {products.map((p) => (
           <button
@@ -214,19 +243,19 @@ export default function PricingTabs() {
                   <span className="text-3xl font-bold">Custom Pricing</span>
                 </div>
               ) : t.listAnnual ? (
-                <div className="mb-1 flex items-baseline gap-1">
-                  <span className="text-3xl font-bold">{fmt(t.listAnnual)}</span>
+                <div className="mb-1 flex items-baseline gap-1 flex-wrap">
+                  <span className="text-3xl font-bold">{fmt(t.listAnnual, country)}</span>
                   <span className="text-sm text-muted-foreground">/Annually</span>
                 </div>
               ) : (
-                <div className="mb-1 flex items-baseline gap-1">
-                  {t.listMonthlyPlus && <span className="text-3xl font-bold">{fmt(monthlyPrice!)}+</span>}
-                  {!t.listMonthlyPlus && <span className="text-3xl font-bold">{fmt(monthlyPrice!)}</span>}
+                <div className="mb-1 flex items-baseline gap-1 flex-wrap">
+                  {t.listMonthlyPlus && <span className="text-3xl font-bold">{fmt(monthlyPrice!, country)}+</span>}
+                  {!t.listMonthlyPlus && <span className="text-3xl font-bold">{fmt(monthlyPrice!, country)}</span>}
                   <span className="text-sm text-muted-foreground">/Monthly</span>
                 </div>
               )}
               {t.setupFee && (
-                <p className="text-xs text-muted-foreground mb-4">+{fmt(t.setupFee)} setup fee</p>
+                <p className="text-xs text-muted-foreground mb-4">+{fmt(t.setupFee, country)} setup fee</p>
               )}
               {t.annualContract && (
                 <p className="text-xs text-muted-foreground mb-4">Annual contract</p>
@@ -268,6 +297,12 @@ export default function PricingTabs() {
             ))}
           </div>
         </div>
+      )}
+
+      {country.code !== "US" && (
+        <p className="text-xs text-muted-foreground text-center mt-6 font-mono">
+          Prices shown in {country.currency}, converted for reference at approximate exchange rates — invoices are billed in USD.
+        </p>
       )}
     </div>
   );
