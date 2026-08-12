@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send, Plane, Rocket, Check } from "lucide-react";
+import { FileCheck2, Send, Plane, Rocket, Check } from "lucide-react";
 import CtaButton from "@/components/cta-button";
 
 const products = [
@@ -12,6 +12,13 @@ const products = [
     desc: "Update your books daily, access real-time insights, and get a dedicated accountant — all on one AI platform.",
     hasToggle: true,
     tiers: [
+      {
+        Icon: FileCheck2,
+        name: "Formation",
+        listMonthly: 0,
+        desc: "For newly incorporated businesses with minimal activity, getting their books set up right.",
+        features: ["Up to 50 transactions/month", "Basic AI categorization", "Email support"],
+      },
       {
         Icon: Send,
         name: "Starter",
@@ -171,7 +178,15 @@ export default function PricingTabs() {
         </div>
       )}
 
-      <div className={`grid grid-cols-1 ${single ? "max-w-md mx-auto" : "md:grid-cols-3"} gap-6`}>
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 gap-6 ${
+          single
+            ? "max-w-md mx-auto sm:grid-cols-1"
+            : product.tiers.length === 4
+              ? "lg:grid-cols-4"
+              : "lg:grid-cols-3"
+        }`}
+      >
         {product.tiers.map((tier) => {
           const t = tier as (typeof product.tiers)[number] & {
             listMonthly?: number;
