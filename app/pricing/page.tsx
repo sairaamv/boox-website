@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import CtaButton from "@/components/cta-button";
 import PricingTabs from "@/components/pricing-tabs";
+
+export const metadata: Metadata = {
+  title: "Pricing",
+  description:
+    "Transparent per-service pricing for bookkeeping, CFO advisory, tax filing, and payroll — no bundled markups.",
+  alternates: { canonical: "https://booksnb.com/pricing" },
+};
 
 const faqs = [
   {
