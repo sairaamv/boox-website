@@ -1,41 +1,27 @@
 # Books & Beyond
 
-> Books & Beyond (booksnb.com) is a virtual accounting and auditing firm serving small and mid-sized businesses in the United States, Canada, and Australia. We pair credentialed, country-specialist accountants with AI-powered workflows to deliver faster month-end closes, cleaner books, and audit-ready output.
+> Books & Beyond (booksnb.com) is a virtual accounting and auditing firm serving small and mid-sized businesses in the United States, Canada, Australia, the United Kingdom, and Singapore. We pair credentialed, country-specialist accountants with AI-powered workflows to deliver faster month-end closes, cleaner books, and audit-ready output.
 
 ## Services
 
-- **Bookkeeping**: Daily reconciliations, transaction categorization, monthly P&L and balance sheet.
-- **Tax Filing**: Corporate returns, sales tax, and annual filings for US (IRS), Canada (CRA), and Australia (ATO).
-- **Payroll**: End-to-end payroll processing and compliance filings for every jurisdiction.
-- **Audit Support**: Audit-ready workpapers, internal controls documentation, and compliance prep.
-- **CFO Advisory**: Management reporting, cash flow forecasting, and board-ready financials.
-
-## Pricing
-
-All plans billed monthly. Annual billing available on request.
-
-| Plan       | USD      | CAD      | AUD      |
-|------------|----------|----------|----------|
-| Starter    | $199/mo  | $269/mo  | $299/mo  |
-| Growth     | $399/mo  | $539/mo  | $589/mo  |
-| Enterprise | Custom   | Custom   | Custom   |
-
-- **Starter**: Up to 200 transactions/month, monthly bookkeeping, 1 tax return/yr, email support, QuickBooks or Xero integration.
-- **Growth**: Everything in Starter + up to 500 transactions/month, payroll (up to 10 employees), quarterly reporting, dedicated accountant, priority support.
-- **Enterprise**: Everything in Growth + unlimited transactions, CFO advisory, audit support, SLA guarantee, custom reporting, multi-entity support.
+- [Services overview](https://booksnb.com/services): Bookkeeping, Tax, Payroll, Audit Support, and CFO Advisory agents.
+- [Pricing](https://booksnb.com/pricing): Starter, Growth, and Enterprise plans, billed monthly with annual billing available on request.
 
 ## Coverage
 
-- **United States**: IRS-compliant bookkeeping, federal and state tax filings, payroll compliance.
-- **Canada**: CRA-compliant filings, HST/GST, T2 corporate returns, payroll (CRA remittances). Software: Wave supported.
-- **Australia**: ATO-registered, BAS lodgement, GST, superannuation, MYOB supported.
+- [United States](https://booksnb.com/us): IRS-compliant bookkeeping, federal and state tax filings, multi-state sales tax, payroll compliance. QuickBooks and Xero supported.
+- [Canada](https://booksnb.com/ca): CRA-compliant filings, GST/HST across provinces, T2 corporate returns, payroll. QuickBooks and Wave supported.
+- [Australia](https://booksnb.com/au): ATO-registered advisors, BAS lodgement, GST, superannuation, STP-compliant payroll. Xero and MYOB supported.
+- [United Kingdom](https://booksnb.com/uk): MTD-ready bookkeeping, VAT, Corporation Tax, Companies House filings, PAYE payroll. Xero and Sage supported.
+- [Singapore](https://booksnb.com/sg): IRAS-compliant filing, GST compliance, CPF payroll, ACRA filings and compliance.
 
-## About
+## Company
 
-Books & Beyond was founded on the belief that small businesses deserve the same quality of accounting that large enterprises have access to — without the enterprise price tag. Our accountants are credentialed professionals (CPAs, CAs, CPAs AU) embedded in their respective jurisdictions. AI handles the repetitive work; humans handle every judgment call.
+- [About](https://booksnb.com/about): Company mission and credentialed accountant model.
+- [Contact](https://booksnb.com/contact): Contact form for inquiries.
 
-## Contact
+## Optional
 
-- Website: https://booksnb.com
-- Email: hello@booksnb.com
-- Contact form: https://booksnb.com/contact
+- [Blog](https://booksnb.com/blog): Accounting insights and articles.
+- [Privacy Policy](https://booksnb.com/privacy)
+- [Terms of Service](https://booksnb.com/terms)
