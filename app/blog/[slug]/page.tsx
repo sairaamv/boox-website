@@ -126,7 +126,7 @@ export default function ArticlePage({ params }: Props) {
               href="/contact"
               className="inline-block bg-brand-forest text-white font-medium px-6 py-2.5 rounded-lg hover:bg-brand-forest-deep transition-colors text-sm"
             >
-              Schedule Demo
+              Book a Call
             </Link>
             <Link
               href="/blog"

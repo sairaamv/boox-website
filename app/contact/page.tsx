@@ -1,19 +1,9 @@
 "use client";
 
-import { Suspense, useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 import { CheckCircle } from "lucide-react";
 
 export default function ContactPage() {
-  return (
-    <Suspense>
-      <ContactForm />
-    </Suspense>
-  );
-}
-
-function ContactForm() {
-  const searchParams = useSearchParams();
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [form, setForm] = useState({
     name: "",
@@ -21,11 +11,6 @@ function ContactForm() {
     company: "",
     message: "",
   });
-
-  useEffect(() => {
-    const email = searchParams.get("email");
-    if (email) setForm((prev) => ({ ...prev, email }));
-  }, [searchParams]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

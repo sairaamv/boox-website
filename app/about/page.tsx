@@ -16,12 +16,12 @@ const accountantPoints = [
   "Accountable for every number that leaves our desk",
 ];
 
-const agentPoints = [
-  "Categorizes transactions and reconciles accounts daily",
+const aiPoints = [
+  "Automates transaction categorization",
   "Flags anomalies before they become problems",
-  "Tracks filing deadlines across every jurisdiction",
-  "Works around the clock — books stay current, not just at month-end",
-  "Every output reviewed by a human — no black-box results",
+  "Speeds up reconciliation and close",
+  "Consistent application of rules at scale",
+  "Humans review everything — no black-box outputs",
 ];
 
 const values = [
@@ -45,17 +45,17 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-5">
-          AI Agents that work. A CPA who&apos;s accountable.
+          CPA-led bookkeeping. Driven by process.
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Books & Beyond is led by a licensed CPA, built on the belief that small
-          businesses deserve the same quality of accounting — and the same AI
-          leverage — that large enterprises have access to, without the enterprise price tag.
+          businesses deserve the same quality of accounting that large enterprises
+          have access to — without the enterprise price tag.
         </p>
       </section>
 
       {/* Story */}
-      <section className="border-y border-border py-16">
+      <section className="bg-muted border-y border-border py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold mb-6">Our story</h2>
           <div className="space-y-4 text-muted-foreground">
@@ -65,10 +65,10 @@ export default function AboutPage() {
               have access to — without the enterprise price tag.
             </p>
             <p>
-              Every engagement runs under CPA oversight, with AI Agents doing the
-              repetitive work — categorizing, reconciling, tracking deadlines —
-              so accountants spend their time on judgment calls, not data entry.
-              Faster closes, cleaner books, audit-ready output.
+              Every engagement runs under CPA oversight. We combine experienced accountants with streamlined processes to
+              deliver faster month-end closes, cleaner books, and audit-ready
+              output. The process handles the repetitive work. The accountants handle
+              the judgment calls.
             </p>
             <p>
               We serve businesses in the United States, Canada, Australia,
@@ -105,14 +105,14 @@ export default function AboutPage() {
               <li>Faster month-end closes</li>
               <li>Fewer errors, more consistency</li>
               <li>Transparent reporting</li>
-              <li>A human accountable for every number</li>
+              <li>Human judgment on everything</li>
             </ul>
           </div>
 
           <div className="bg-card border border-border rounded-lg p-8 shadow-sm">
-            <h3 className="font-semibold text-lg mb-4">Our AI Agents</h3>
+            <h3 className="font-semibold text-lg mb-4">Our Process</h3>
             <ul className="space-y-3">
-              {agentPoints.map((item) => (
+              {aiPoints.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
                   <Check className="h-3.5 w-3.5 text-brand-forest mt-0.5 shrink-0" />
                   {item}
@@ -124,7 +124,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="border-y border-border py-16">
+      <section className="bg-muted border-y border-border py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold mb-10 text-center">What we stand for</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -159,7 +159,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-card border-y border-border text-white py-16">
+      <section className="bg-brand-forest text-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Want to meet the team?</h2>
           <p className="text-white/80 mb-8">
@@ -167,9 +167,9 @@ export default function AboutPage() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-brand-forest-light text-ink font-medium px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
+            className="inline-block bg-white text-brand-forest font-medium px-8 py-3 rounded-lg hover:bg-muted transition-colors"
           >
-            Schedule Demo
+            Book a Call
           </a>
         </div>
       </section>

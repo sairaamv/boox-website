@@ -92,22 +92,22 @@ export default function AUPage() {
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <div className="inline-flex text-xs font-mono border border-border rounded-lg px-3 py-1.5 text-muted-foreground mb-6">
-          AI Agent + ATO-registered
+          ATO-registered, BAS-ready
         </div>
         <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-5 max-w-2xl">
           ATO-Registered Accounting for Australian Businesses
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl mb-8">
-          BAS lodgement, EOFY returns, Single Touch Payroll — our AI Agent keeps
-          your books ATO-ready all year, an accountant reviews every filing.
+          BAS lodgement, EOFY returns, Single Touch Payroll — we keep your books
+          ATO-ready all year.
         </p>
         <CtaButton href="/contact" variant="primary">
-          Schedule Demo
+          Book a Call
         </CtaButton>
       </section>
 
       {/* Services */}
-      <section className="border-y border-border py-16">
+      <section className="bg-muted border-y border-border py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold mb-10">Services for Australian businesses</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -168,17 +168,17 @@ export default function AUPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-card border-y border-border text-white py-16">
+      <section className="bg-brand-forest text-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Let&apos;s sort your Australian books.</h2>
           <p className="text-white/80 mb-8">
-            Books & Beyond — AI Agent + ATO-registered, and no-nonsense about your numbers.
+            Books & Beyond — ATO-registered, BAS-ready, and no-nonsense about your numbers.
           </p>
           <a
             href="/contact"
-            className="inline-block bg-brand-forest-light text-ink font-medium px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
+            className="inline-block bg-white text-brand-forest font-medium px-8 py-3 rounded-lg hover:bg-muted transition-colors"
           >
-            Schedule Demo
+            Book a Call
           </a>
         </div>
       </section>

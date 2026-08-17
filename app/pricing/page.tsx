@@ -1,13 +1,54 @@
-import type { Metadata } from "next";
+import { Check } from "lucide-react";
 import CtaButton from "@/components/cta-button";
-import PricingTabs from "@/components/pricing-tabs";
 
-export const metadata: Metadata = {
-  title: "Pricing",
-  description:
-    "Transparent per-service pricing for bookkeeping, CFO advisory, tax filing, and payroll — no bundled markups.",
-  alternates: { canonical: "https://booksnb.com/pricing" },
-};
+const tiers = [
+  {
+    name: "Starter",
+    desc: "For small businesses getting their books in order.",
+    features: [
+      "Up to 200 transactions/month",
+      "Monthly bookkeeping",
+      "Tax filing (1 return/yr)",
+      "Email support",
+      "QuickBooks or Xero integration",
+    ],
+    cta: "Get Started",
+    ctaHref: "/contact",
+    highlight: false,
+  },
+  {
+    name: "Growth",
+    desc: "For growing businesses that need more support.",
+    features: [
+      "Everything in Starter",
+      "Up to 500 transactions/month",
+      "Payroll (up to 10 employees)",
+      "Quarterly reporting",
+      "Dedicated accountant",
+      "Priority support",
+    ],
+    cta: "Get Started",
+    ctaHref: "/contact",
+    highlight: true,
+    badge: "Most Popular",
+  },
+  {
+    name: "Enterprise",
+    desc: "Custom accounting and advisory for larger businesses.",
+    features: [
+      "Everything in Growth",
+      "Unlimited transactions",
+      "CFO advisory",
+      "Audit support",
+      "SLA guarantee",
+      "Custom reporting",
+      "Multi-entity support",
+    ],
+    cta: "Get a Custom Quote",
+    ctaHref: "/contact",
+    highlight: false,
+  },
+];
 
 const faqs = [
   {
@@ -35,20 +76,55 @@ export default function PricingPage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Pricing</h1>
         <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-8">
-          One plan per AI Agent — bookkeeping, CFO advisory, taxes, and payroll each priced on their own.
+          Plans built around your business — get a quote in one call.
         </p>
       </section>
 
-      {/* Pricing tabs */}
+      {/* Pricing cards */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
-        <PricingTabs />
-        <p className="text-xs text-muted-foreground text-center mt-10 font-mono">
-          Pricing is scoped to your transaction volume and complexity. Multi-entity pricing available — ask us.
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {tiers.map((tier) => (
+            <div
+              key={tier.name}
+              className={`bg-card border rounded-lg p-8 shadow-sm flex flex-col relative ${
+                tier.highlight ? "border-brand-forest" : "border-border"
+              }`}
+            >
+              {tier.badge && (
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-mono bg-brand-forest text-white px-3 py-1 rounded-lg">
+                  {tier.badge}
+                </span>
+              )}
+              <div className="mb-6">
+                <h2 className="font-bold text-lg mb-1">{tier.name}</h2>
+                <p className="text-sm text-muted-foreground mt-3">{tier.desc}</p>
+              </div>
+              <ul className="space-y-2 mb-8 flex-1">
+                {tier.features.map((f) => (
+                  <li key={f} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <Check className="h-3.5 w-3.5 text-brand-forest mt-0.5 shrink-0" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <CtaButton
+                href={tier.ctaHref}
+                variant={tier.highlight ? "primary" : "secondary"}
+                className="text-center w-full"
+              >
+                {tier.cta}
+              </CtaButton>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs text-muted-foreground text-center mt-6 font-mono">
+          Pricing is scoped to your transaction volume and complexity. Annual
+          billing available — ask us.
         </p>
       </section>
 
       {/* FAQ */}
-      <section className="border-y border-border py-16">
+      <section className="bg-muted border-y border-border py-16">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold mb-8 text-center">Common questions</h2>
           <div className="space-y-6">
