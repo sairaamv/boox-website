@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import CtaButton from "@/components/cta-button";
+
+export const metadata: Metadata = {
+  title: "Pricing",
+  description:
+    "Transparent per-service pricing for bookkeeping, CFO advisory, tax filing, and payroll — no bundled markups.",
+  alternates: { canonical: "https://booksnb.com/pricing" },
+};
 
 const tiers = [
   {
