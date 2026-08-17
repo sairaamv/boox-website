@@ -103,20 +103,22 @@ const services = [
       "Chart of accounts setup and maintenance",
       "Year-end close and working papers",
     ],
-    compliance: "US: GAAP  ·  CA: ASPE/IFRS  ·  AU: AASB standards",
+    compliance: "US: GAAP  ·  CA: ASPE/IFRS  ·  AU: AASB  ·  SG: SFRS  ·  UK: FRS 102",
   },
   {
     Icon: FileText,
     title: "Tax Filing",
-    desc: "We handle the full cycle of tax compliance — corporate returns, indirect taxes, and annual filings — across all three jurisdictions we serve.",
+    desc: "We handle the full cycle of tax compliance — corporate returns, indirect taxes, and annual filings — across all five jurisdictions we serve.",
     features: [
       "US: Federal + state income tax, 1099 filing, sales tax nexus",
       "CA: GST/HST filing, T2 corporate returns, CRA compliance",
       "AU: BAS lodgement, GST, PAYG, EOFY returns, ATO compliance",
+      "SG: GST filing, corporate income tax, IRAS compliance",
+      "UK: VAT returns (MTD), Corporation Tax, HMRC compliance",
       "Tax planning and advisory",
       "On-time filing, every time",
     ],
-    compliance: "IRS  ·  CRA  ·  ATO",
+    compliance: "IRS  ·  CRA  ·  ATO  ·  IRAS  ·  HMRC",
   },
   {
     Icon: Users,
@@ -126,10 +128,12 @@ const services = [
       "US: W-2s, quarterly filings, multi-state payroll",
       "CA: T4s, ROEs, payroll remittances",
       "AU: Single Touch Payroll (STP), super contributions, payslips",
+      "SG: CPF contributions, IRAS payroll reporting",
+      "UK: PAYE, RTI submissions, HMRC compliance",
       "Direct deposit and payslip generation",
       "Payroll tax compliance and remittances",
     ],
-    compliance: "STP  ·  T4  ·  W-2",
+    compliance: "STP  ·  T4  ·  W-2  ·  CPF  ·  PAYE",
   },
   {
     Icon: Search,
@@ -138,11 +142,11 @@ const services = [
     features: [
       "Audit-ready workpaper preparation",
       "Internal control documentation",
-      "IRS / CRA / ATO audit response support",
+      "IRS / CRA / ATO / IRAS / HMRC audit response support",
       "Compliance gap analysis",
       "Supporting schedules and reconciliations",
     ],
-    compliance: "IRS  ·  CRA  ·  ATO",
+    compliance: "IRS  ·  CRA  ·  ATO  ·  IRAS  ·  HMRC",
   },
   {
     Icon: BarChart2,
@@ -155,7 +159,7 @@ const services = [
       "Board-ready financial presentations",
       "KPI dashboards and business metrics",
     ],
-    compliance: "Available across all three jurisdictions",
+    compliance: "Available across all five jurisdictions",
   },
 ];
 

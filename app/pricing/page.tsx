@@ -78,7 +78,7 @@ const faqs = [
   },
   {
     q: "What software do you support?",
-    a: "QuickBooks and Xero across all plans. Wave for Canadian clients, MYOB for Australian clients.",
+    a: "QuickBooks and Xero across all plans. Wave for Canadian clients, MYOB for Australian clients, Sage for UK clients.",
   },
 ];
 
