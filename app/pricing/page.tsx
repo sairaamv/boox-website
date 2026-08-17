@@ -13,6 +13,8 @@ const tiers = [
   {
     name: "Starter",
     desc: "For small businesses getting their books in order.",
+    priceMonthly: 494,
+    priceAnnualMonthly: 445,
     features: [
       "Up to 200 transactions/month",
       "Monthly bookkeeping",
@@ -27,6 +29,8 @@ const tiers = [
   {
     name: "Growth",
     desc: "For growing businesses that need more support.",
+    priceMonthly: 719,
+    priceAnnualMonthly: 647,
     features: [
       "Everything in Starter",
       "Up to 500 transactions/month",
@@ -43,6 +47,7 @@ const tiers = [
   {
     name: "Enterprise",
     desc: "Custom accounting and advisory for larger businesses.",
+    priceCustom: true,
     features: [
       "Everything in Growth",
       "Unlimited transactions",
@@ -105,6 +110,19 @@ export default function PricingPage() {
               )}
               <div className="mb-6">
                 <h2 className="font-bold text-lg mb-1">{tier.name}</h2>
+                {tier.priceCustom ? (
+                  <div className="mt-3 text-3xl font-bold">Custom Pricing</div>
+                ) : (
+                  <div className="mt-3 flex items-baseline gap-1">
+                    <span className="text-3xl font-bold">${tier.priceMonthly}</span>
+                    <span className="text-sm text-muted-foreground">/mo</span>
+                  </div>
+                )}
+                {tier.priceAnnualMonthly && (
+                  <p className="text-xs text-muted-foreground mt-1">
+                    ${tier.priceAnnualMonthly}/mo billed annually
+                  </p>
+                )}
                 <p className="text-sm text-muted-foreground mt-3">{tier.desc}</p>
               </div>
               <ul className="space-y-2 mb-8 flex-1">
